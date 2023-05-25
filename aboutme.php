@@ -10,8 +10,8 @@
             <div class="col-md-6 block-4__text-block">
               <div class="block-4__card-body">
                 <div class="card-body__title">
-                  <h5 class="card-title__block-4">Мария Кукиева</h5>
-                  <h6 class="card-subtitle__block-4">English teacher</h6>
+                  <h6 class="card-title__block-4">Мария Кукиева</h6>
+                  <h7 class="card-subtitle__block-4">English teacher</h7>
                 </div>
                 <ul class="list-group__block4 list-group-flush">
                   <li class="list-group-item d-flex align-items-center border-0">
