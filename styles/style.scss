@@ -110,3 +110,109 @@ footer {
         bottom: 2rem;
     }
 }
+
+.block-4 {
+    font-family: $font;
+    color: $color-gray;
+    margin: 6rem auto 6rem auto;
+
+    .title-block-4 {
+        font-weight: 700;
+        font-size: 4rem;
+        line-height: 4.7rem;
+        margin: 0 0 4rem 0;
+    }
+
+    .block-4__text-block {
+        padding-left: 4.5rem;
+    }
+
+    .card-body__title {
+        margin: 2rem 0 2rem 0;
+
+        .card-title__block-4 {
+            font-weight: 500;
+            font-size: 2rem;
+            line-height: 2.375rem;
+            color: $color-gray;
+            margin: 0;
+        }
+
+        .card-subtitle__block-4 {
+            font-weight: 500;
+            font-size: 1.5rem;
+            line-height: 1.75rem;
+            color: $color-gray;
+            margin: 0;
+        }
+    }
+
+    .list-group__block4 {
+        max-width: 37.125rem;
+        padding-left: 0;
+        margin-bottom: 0;
+
+        .list-group-item,
+        .list-group-item__second {
+            padding: 0;
+            font-weight: 400;
+            font-size: 1.125rem;
+            line-height: 1.3rem;
+            color: $color-gray;
+        }
+
+        .list-group-item {
+            padding-bottom: 1.4rem;
+
+            .bi-arrow-right-circle {
+                margin-right: 1.375rem;
+            }
+        }
+
+        .list-group-item__second {
+            padding-bottom: 1rem;
+
+            .bi-arrow-right-circle {
+                margin-right: 1.375rem;
+            }
+
+            .dot__icon {
+                margin-right: 0.625rem;
+            }
+        }
+
+        #second_item {
+            max-width: 23.9375rem;
+        }
+
+        #fourth_item {
+            max-width: 29.9375rem;
+        }
+
+        #sixth_item {
+            max-width: 29.4375rem;
+        }
+
+        #eighth_item {
+            max-width: 29.375rem;
+        }
+
+        #ninth_item {
+            max-width: 30.7rem;
+        }
+
+        .list-group-item__elements {
+            margin: 0;
+        }
+
+        .list-group__aboutme {
+            padding-left: 3.58rem;
+        }
+    }
+
+    .block4__img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+}
