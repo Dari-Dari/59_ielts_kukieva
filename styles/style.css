@@ -1,1 +1,44 @@
-/*Start*/
+.main__block-5 {
+  font-family: "Roboto", Arial, sans-serif;
+  color: #54566b;
+}
+
+.block-5__title {
+  padding: 5rem 0 2.875rem 5rem;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.block-5__card {
+  padding: 1.8rem 1.25rem 3.5rem 1.25rem;
+  height: 60vh;
+  background-color: #e5f3ff;
+  color: #54566b;
+}
+
+.block-5__card-title {
+  text-align: left;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5625rem;
+}
+
+.block-5__list-group {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 21px;
+}
+
+.block-5__card_time {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 16px;
+}
+
+.block-5__card_price {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 23px;
+}/*# sourceMappingURL=style.css.map */
