@@ -14,36 +14,29 @@
 <body>
 
   <header class="header">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="логотип" width="30" height="24">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Подготовка</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Для кого?</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Стоимость</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Почему я?</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <button class="btn btn-outline-primary" type="submit">Связаться</button>
-          </form>
-        </div>
-      </div>
-    </nav>
+  <a name="header-anchor"></a>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">                
+                <a class="navbar-brand header-logo" href="#">
+                    <img src="/assets/icons/logo.svg" alt="логотип" class="header_logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse header-header" id="navbarSupportedContent">
+                            <a class="nav-link active header__link" aria-current="page" href="#services-anchor">Услуги</a>
+                            <a class="nav-link active header__link" aria-current="page" href="#aboutme-anchor">Обо мне</a>
+                            <a class="nav-link active header__link" aria-current="page" href="#price-anchor">Стоимость</a>
+                            <a class="nav-link active header__link" aria-current="page" href="#reviews-anchor">Отзывы</a>
+                        <form class="d-flex button__header" role="search">
+                        <button class="btn button__header-red" type="button">
+                            <a class="header__button" href="https://t.me/ielts_kukieva">Связаться</a> </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
   </header>
 
   <main class="main">
@@ -268,13 +261,27 @@
     </section>
 
     <footer class="footer">
-
-      <nav class="navbar navbar-dark justify-content-center align-items-end">
-        <img src="assets/images/footer_img.PNG" class="d-block w-25" alt="...">
-        <p class="footer_text">Telegram</p>
-        <p class="footer_text">Instagram</p>
-      </nav>
-
+    <div class="container-fluid">
+        <img class="d-none d-md-block img-envelope" src="/assets/icons/Envelope_no_background.png" alt="img-envelope">
+        <img class="d-block d-md-none img-envelope-small" src="/assets/icons/Envelope_no_background.png" alt="img-envelope">
+        <div class="row justify-content-end pb-2">
+            <div class="col footer__text-autor">
+                    Мария Кукиева <span>&copy;</span> 2023
+            </div>
+            <div class="col footer__icon">
+                <a href="https://instagram.com/ielts_kukieva?igshid=MzRlODBiNWFlZA==">
+                    <img src="/assets/icons/icon _instagram.svg" alt="instagram">
+                </a>
+                
+        </div>
+        <div class="col  footer__icon">
+            <a href="https://t.me/ielts_kukieva">
+                <img src="/assets/icons/icon _telegram.svg" alt="telegram">
+            </a>
+            
+    </div>
+        </div>
+    </div>
     </footer>
 
 
