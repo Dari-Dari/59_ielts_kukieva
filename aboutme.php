@@ -36,7 +36,7 @@
                       alt="icon arrow circle right">
                       <p class="list-group-item__elements" id="fourth_item">10 лет преподаю английский язык, из них 9 лет готовлю студентов к IELTS:</p>
                   </li>
-                <ul class="list-group">
+                <ul class="list-group__aboutme">
                   <li class="list-group-item__second d-flex align-items-center border-0">
                   <img src="assets/icons/dot.svg" alt="dot" class="dot__icon">
                   <p class="list-group-item__elements" id="fith_item">УрФУ - подготовка ППС (профессорско-преподавательский состав) к Кембриджским экзаменам KET и FCE</p>

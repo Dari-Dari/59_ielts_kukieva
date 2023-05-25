@@ -106,7 +106,7 @@ footer .img-envelope-small {
   margin: 0 0 4rem 0;
 }
 .block-4 .block-4__text-block {
-  padding-left: 6rem;
+  padding-left: 4.5rem;
 }
 .block-4 .card-body__title {
   margin: 2rem 0 2rem 0;
@@ -153,17 +153,11 @@ footer .img-envelope-small {
 .block-4 .list-group__block4 .list-group-item__second .dot__icon {
   margin-right: 0.625rem;
 }
-.block-4 .list-group__block4 #first_item {
-  max-width: 29.3rem;
-}
 .block-4 .list-group__block4 #second_item {
   max-width: 23.9375rem;
 }
 .block-4 .list-group__block4 #fourth_item {
   max-width: 29.9375rem;
-}
-.block-4 .list-group__block4 #fith_item {
-  max-width: 31.75rem;
 }
 .block-4 .list-group__block4 #sixth_item {
   max-width: 29.4375rem;
@@ -178,7 +172,7 @@ footer .img-envelope-small {
   margin: 0;
 }
 .block-4 .list-group__block4 .list-group__aboutme {
-  padding-left: 4.375rem;
+  padding-left: 3.58rem;
 }
 .block-4 .block4__img {
   max-width: 100%;
