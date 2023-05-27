@@ -92,4 +92,52 @@ footer .img-envelope-small {
   height: auto;
   position: absolute;
   bottom: 2rem;
+}
+
+.block-6 {
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.card-wrapper__block-6 {
+  display: flex;
+  justify-content: center;
+}
+
+.card__block-6 {
+  margin: 1%;
+  padding: 1%;
+  background-color: #e5f3ff;
+}
+
+.img__block-6 {
+  box-shadow: 0px 1px 4px 1px #54566b;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5vw;
+  height: 10vh;
+  top: 50%;
+  background-color: #f2c8be;
+  opacity: 0.85;
+  border-radius: 25%;
+}
+
+.title__block-6,
+.text__block-6 {
+  font-family: "Roboto";
+  color: #54566b;
+}
+
+.title__block-6 {
+  margin: 10%;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.text__block-6 {
+  width: 70%;
+  font-size: 70%;
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */

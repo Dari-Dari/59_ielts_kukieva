@@ -1,221 +1,6 @@
-<!DOCTYPE html>
-<html lang="ru">
+<?php require_once('index.php') ?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="/59_ielts_kukieva/styles/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
-
-    <title>IELTS KUKIEVA</title>
-</head>
-
-<body>
-
-    <header class="header">
-        <a name="header-anchor"></a>
-        <nav class="navbar navbar-expand-lg ">
-            <div class="container-fluid">                
-                <a class="navbar-brand header-logo" href="#">
-                    <img src="/assets/icons/logo.svg" alt="логотип" class="header_logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse header-header" id="navbarSupportedContent">
-                            <a class="nav-link active header__link" aria-current="page" href="#services-anchor">Услуги</a>
-                            <a class="nav-link active header__link" aria-current="page" href="#aboutme-anchor">Обо мне</a>
-                            <a class="nav-link active header__link" aria-current="page" href="#price-anchor">Стоимость</a>
-                            <a class="nav-link active header__link" aria-current="page" href="#reviews-anchor">Отзывы</a>
-                        <form class="d-flex button__header" role="search">
-                        <button class="btn button__header-red" type="button">
-                            <a class="header__button" href="https://t.me/ielts_kukieva">Связаться</a> </button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <main class="main">
-        <section class="main__block-2 block-2">
-            <div class="container-fluid">
-                <div class="card-mb-3 main__banner">
-                    <div class="row g-4">
-                        <div class="col-8">
-                            <div class="card-body">
-                                <h5 class="card-title fs-1">IELTS. Качественно, профессионально.</h5>
-                                <p class="card-text">Качественно, профессионально - Ваше серьёзное отношение к обучению
-                                    обязательно. Через анализ языка - к свободному общению.</p>
-                                <button class="btn btn-outline-primary" type="submit">Связаться</button>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <img src="assets/images/IMG_8877 без фона.png" style="max-width: 230px;" class="card-img-right" alt="welcome picture">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="main__block-3 block-3">
-            <div class="container-fluid">
-                <a name="services-anchor"></a>
-                <h5 class="card-title fs-1">Услуги</h5>
-                <div class="row">
-                    <div class="col-6">
-                        <div class="card" style="width: 18rem;">
-                            <img src="assets/images/b3_services_img.JPEG" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Индивидуальная подготовка к IELTS</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">Узнать больше</button>
-
-                                <!-- Modal -->
-                                <div class="modal fade" id="exampleModal" tabindex="-1"
-                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Из чего складывается
-                                                    индивидуальная подготовка к IELTS?</h1>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                1. Определение Вашего входного балла - входное тестирование по формату
-                                                IELTS (все 4 навыка) с выставлением баллов за каждую часть и общего
-                                                балла за экзамен (оценка по критериям IELTS).
-                                                2. Разработка индивидуальной стратегии подготовки к IELTS в зависимости
-                                                от полученного входного балла, требуемого балла и сроков сдачи IELTS.
-                                                3. Отработка экзаменационного формата и развитие т.н. выносливости -
-                                                умение хорошо справиться со всеми частями на экзамене и уложиться во
-                                                время.
-                                                4. Тренировка устной части экзамена (IELTS Speaking Mock Test) с
-                                                соблюдением экзаменационного регламента и выставлением баллов за каждый
-                                                критерий (беглость и связность речи, лексический и грамматический
-                                                диапазон, произношение).
-                                                5. Проверка письменных работ с указание баллов по всем критериям и
-                                                объяснением того, что уже хорошо и что нужно улучшить, чтобы получить
-                                                требуемый балл.
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary"
-                                                    data-bs-dismiss="modal">Закрыть</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card" style="width: 18rem;">
-                            <img src="assets/images/b3_services_img.JPEG" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Индивидуальные занятия по подготовке к письменной части IELTS
-                                </h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Узнать больше</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card" style="width: 18rem;">
-                            <img src="assets/images/b3_services_img.JPEG" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Консультации для преподавателей по вопросам подготовки к IELTS
-                                </h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Узнать больше</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card" style="width: 18rem;">
-                            <img src="assets/images/b3_services_img.JPEG" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Общий английский</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Узнать больше</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="main__block-4 block-4">
-            <div class="container-fluid">
-                <a name="aboutme-anchor"></a>
-                <h5 class="card-title fs-1">Обо мне</h5>
-                <div class="card mb-lg-0" style="max-width: 1500px;">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="assets/images/b4_aboutme_img.JPG" class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Мария Кукиева</h5>
-                                <p class="card-text">Лингвист-переводчик, Уральский Федеральный Университет (УРФУ),
-                                    Физико-технический факультет, Кафедра иностранных языков, г. Екатеринбург (диплом с
-                                    отличием)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="main__block-5 block-5">
-            <div class="container-fluid">
-                <a name="price-anchor"></a>
-                <h5 class="card-title fs-1">Стоимость занятий</h5>
-                <div class="row">
-                    <div class="col-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Индивидуально</h5>
-                            <p class="card-text">Подготовка к IELTS. Академическое письмо (формат IELTS). Общий
-                                английский</p>
-                            <p class="card-text">Стоимость: 5000 р</p>
-                            <button class="btn btn-outline-primary" type="submit">Связаться</button>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Консультации</h5>
-                            <p class="card-text">Подготовка к IELTS. Академическое письмо (формат IELTS). Общий
-                                английский</p>
-                            <p class="card-text">Стоимость: 5000 р</p>
-                            <button class="btn btn-outline-primary" type="submit">Связаться</button>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Консультации</h5>
-                            <p class="card-text">Консультации для преподавателей Консультация по формату IELTS
-                                Консультация по вопросам подготовки к IELTS</p>
-                            <p class="card-text">Стоимость: 5000 р</p>
-                            <button class="btn btn-outline-primary" type="submit">Связаться</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="main__block-6 block-6">
+<section class="main__block-6 block-6">
             <div class="container">
               <h5 class="card-title fs-1 title__block-6">Отзывы</h5>
               <div id="carouselExampleDark" class="carousel carousel-dark slide d-none d-sm-block">
@@ -447,7 +232,7 @@
                     <div class="card-wrapper__block-6">
                         <div class="card card__block-6" style="width: 18rem">
                             <img
-                              src="/59_ielts_kukieva/assets/images/1-1Ivanova.jpg"
+                              src="/59_ielts_kukieva/assets/images/1-1 Ivanova.jpg"
                               class="card-img-top img__block-6"
                               alt=""
                             />
@@ -461,7 +246,7 @@
                   <div class="carousel-item active">
                     <div class="card-wrapper__block-6">
                         <div class="card card__block-6" style="width: 18rem">
-                            <img src="/59_ielts_kukieva/assets/images/1-2Ivanova.jpg" class="card-img-top img__block-6" alt="" />
+                            <img src="/59_ielts_kukieva/assets/images/1-2 Ivanova.jpg" class="card-img-top img__block-6" alt="" />
                             <div class="card-body">
                               <p class="card-text">
                               </p>
@@ -472,7 +257,7 @@
                   <div class="carousel-item active">
                     <div class="card-wrapper__block-6">
                         <div class="card card__block-6" style="width: 18rem">
-                            <img src="/59_ielts_kukieva/assets/images/1-3Ivanova.jpg" class="card-img-top img__block-6" alt="" />
+                            <img src="/59_ielts_kukieva/assets/images/1-3 Ivanova.jpg" class="card-img-top img__block-6" alt="" />
                             <div class="card-body">
                               <p class="card-text text__block-6">
                               Ангелина Иванова, журналист, г.Токио, Япония <br>
@@ -513,7 +298,7 @@
                   <div class="carousel-item active">
                     <div class="card-wrapper__block-6">
                         <div class="card card__block-6" style="width: 18rem">
-                            <img src="/59_ielts_kukieva/assets/images/10-1Vaginskaya.jpg" class="card-img-top img__block-6" alt="" />
+                            <img src="/59_ielts_kukieva/assets/images/10-1 Vaginskaya.jpg" class="card-img-top img__block-6" alt="" />
                             <div class="card-body">
                               <p class="card-text text__block-6">
                               Валерия Важинская, учитель английского языка <br>
@@ -537,46 +322,3 @@
             </div>
             </div>
           </section>
-
-        <div class="d-none d-sm-block back">
-            <a href="#header-anchor">
-                <img src="/assets/icons/arrow.png" title="back-home" alt="arrow-up">
-            </a>
-        </div>
-
-        
-
-<footer  class="footer">
-    <div class="container-fluid">
-        <img class="d-none d-md-block img-envelope" src="/assets/icons/Envelope_no_background.png" alt="img-envelope">
-        <img class="d-block d-md-none img-envelope-small" src="/assets/icons/Envelope_no_background.png" alt="img-envelope">
-        <div class="row justify-content-end pb-2">
-            <div class="col footer__text-autor">
-                    Мария Кукиева <span>&copy;</span> 2023
-            </div>
-            <div class="col footer__icon">
-                <a href="https://instagram.com/ielts_kukieva?igshid=MzRlODBiNWFlZA==">
-                    <img src="/assets/icons/icon _instagram.svg" alt="instagram">
-                </a>
-                
-        </div>
-        <div class="col  footer__icon">
-            <a href="https://t.me/ielts_kukieva">
-                <img src="/assets/icons/icon _telegram.svg" alt="telegram">
-            </a>
-            
-    </div>
-        </div>
-    </div>
-</footer>
-
-    </main>
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
-</body>
-
-</html>
