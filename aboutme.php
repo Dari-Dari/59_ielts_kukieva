@@ -2,10 +2,11 @@
   <div class="container">
   <a name="aboutme-anchor"></a>
         <h5 class="card-title title-block-4">Обо мне</h5>
-        <div class="card mb-lg-0 border-0" style="max-width: 1500px;">
+        <div class="mb-lg-0 border-0">
           <div class="row g-0">
             <div class="col-md-6 block-4__image-block">
               <img src="assets/images/b4_aboutme_img.JPG" class="img-fluid rounded-start block4__img" alt="Мария Кукиева">
+              <img src="assets/images/ellipse_block4_up.svg" alt="circle" class="circle_b4_up">
             </div>
             <div class="col-md-6 block-4__text-block">
               <div class="block-4__card-body">
@@ -60,6 +61,7 @@
                 </ul>
                 </ul>
               </div>
+              <img src="assets/images/ellipse_block4_down.svg" alt="circle" class="circle_b4_down">
             </div>
           </div>
         </div>
