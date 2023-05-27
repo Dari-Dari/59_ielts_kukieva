@@ -92,4 +92,42 @@ footer .img-envelope-small {
   height: auto;
   position: absolute;
   bottom: 2rem;
-}/*# sourceMappingURL=style.css.map */
+}
+.main__block-3 {
+  .card-title {
+      color: #54566B;
+  }
+  .card-body {
+      width: 300px;
+      height: 222px;
+      background-color: #e5f3ff;
+      border-radius: 10%; 
+      color: #54566B;  
+      font-family:"Roboto", Arial, sans-serif;
+      font-size: 16px;
+      display: flex;
+      flex-direction: column;
+      
+  }
+  .card-title {
+      padding:5px;
+      margin: 10px;
+  }
+  .btn {
+      box-shadow: 2px 4px 10px rgba(84, 86, 107, 0.3);
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 5px;
+  }
+  .btn:hover {
+      background-color:#FCF5EC;
+      transition: 0.5s;
+      opacity: 0.85;
+      color: red;   
+  }
+   .modal-content {
+      background-color:beige;
+   }
+  }
+   /*media*/
+   
