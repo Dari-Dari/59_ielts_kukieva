@@ -1,1 +1,97 @@
-@import'/59_ielts_kukieva/style.scss';
+
+header {
+  background-color: #e5f3ff;
+  font-size: 1rem;
+  font-family: "Roboto";
+}
+header .header-logo {
+  margin-left: 5.625%;
+}
+header .header-logo img {
+  max-height: 70px;
+}
+header .header-header {
+  justify-content: end;
+  padding-left: 5%;
+  font-weight: 500;
+}
+header .header-header a {
+  padding-right: 6%;
+}
+header .header-header a:hover {
+  opacity: 0.85;
+}
+header .header-menu {
+  margin: 0;
+  padding-left: 0;
+  justify-content: end;
+}
+header .header-menu .header__item {
+  padding: 0 1rem;
+}
+header .header__link {
+  color: #54566b;
+}
+header .button__header {
+  margin-right: 5.625%;
+}
+header .button__header a {
+  text-decoration: none;
+  color: #fff;
+}
+header .button__header:hover {
+  opacity: 0.9;
+}
+header .button__header .button__header-red {
+  width: 8rem;
+  height: 2.5rem;
+  font-size: 1rem;
+  background-color: #f52222;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  filter: drop-shadow(2px 4px 10px rgba(84, 86, 107, 0.3));
+}
+
+.back {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  bottom: 5rem;
+  right: 30px;
+  background-color: #e5f3ff;
+  border-radius: 5px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+footer {
+  background-color: #e5f3ff;
+  position: relative;
+  padding: 1rem 5.625%;
+  margin-top: 2rem;
+}
+footer .footer__text-autor {
+  color: #54566b;
+  text-align: end;
+  padding-top: 0.3rem;
+}
+footer .footer__icon {
+  max-width: 30px;
+  padding: 0 2rem;
+}
+footer .footer__icon :hover {
+  opacity: 0.85;
+}
+footer .img-envelope {
+  max-width: 130px;
+  height: auto;
+  position: absolute;
+  bottom: 1rem;
+}
+footer .img-envelope-small {
+  max-width: 70px;
+  height: auto;
+  position: absolute;
+  bottom: 2rem;
+}/*# sourceMappingURL=style.css.map */
+
