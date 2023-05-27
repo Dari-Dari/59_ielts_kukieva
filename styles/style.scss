@@ -136,12 +136,20 @@ footer {
             right: 13.5rem;
             bottom: 35rem;
             z-index: -1;
+
+            @media screen and (max-width:991px) {
+                display: none;
+            }
         }
     }
 
     .block-4__text-block {
         padding-left: 4.5rem;
         position: relative;
+
+        @media screen and (max-width:991px) {
+            padding-left: 0rem;
+        }
 
         .card-body__title {
             margin: 2rem 0 2rem 0;
@@ -223,6 +231,10 @@ footer {
 
             .list-group__aboutme {
                 padding-left: 3.58rem;
+
+                @media screen and (max-width:991px) {
+                    padding-left: 2.5rem;
+                }
             }
         }
 
@@ -230,6 +242,10 @@ footer {
             position: absolute;
             top: 14rem;
             left: 10rem;
+
+            @media screen and (max-width:991px) {
+                display: none;
+            }
         }
     }
 }
