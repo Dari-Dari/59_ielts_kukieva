@@ -218,64 +218,64 @@ footer .img-envelope-small {
   }
 }
 
-.col-8 {
+.main-text {
   display: grid;
   color: #54566b;
-  align-items: center;
-  grid-template-rows: 1fr;
+  align-items: end;
+  grid-template-rows: 2fr;
   max-height: 886px;
 }
 
-.card-title {
+.main__card-title {
   font-size: 3.21rem;
 }
 @media (max-width: 576px) {
-  .card-title {
+  .main__card-title {
     z-index: 6;
     font-size: 1.5rem;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  .card-title {
+  .main__card-title {
     z-index: 6;
     font-size: 2rem;
   }
 }
 @media (min-width: 769px) and (max-width: 1199px) {
-  .card-title {
+  .main__card-title {
     z-index: 6;
     font-size: 2.5rem;
   }
 }
 
-.card-text {
+.main__card-text {
   font-size: 1.5rem;
   padding-top: 4rem;
 }
 @media (max-width: 576px) {
-  .card-text {
+  .main__card-text {
     z-index: 6;
     font-size: 1rem;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  .card-text {
+  .main__card-text {
     z-index: 6;
     font-size: 1.5rem;
   }
 }
 @media (min-width: 769px) and (max-width: 1199px) {
-  .card-text {
+  .main__card-text {
     z-index: 6;
     font-size: 2rem;
   }
 }
 
-.card-body {
+.main__card-body {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
 }
 
-.col-4 {
+.main__main-img {
   max-height: 886px;
 }/*# sourceMappingURL=style.css.map */

@@ -212,14 +212,14 @@ $font-size:24px;
     display: none;
   }
 }
-.col-8{
+.main-text{
     display: grid;
     color:$color-gray;
-    align-items: center;
-    grid-template-rows:1fr;
+    align-items: end;
+    grid-template-rows:2fr;
     max-height: 886px;
    }
-.card-title{
+.main__card-title{
     font-size: 3.21rem;
     @media (max-width:576px){
         z-index: 6;
@@ -234,7 +234,7 @@ $font-size:24px;
         font-size: 2.5rem;
       }
 }
-.card-text{
+.main__card-text{
     font-size: 1.5rem;
     padding-top: 4rem;
     @media (max-width:576px){
@@ -250,11 +250,11 @@ $font-size:24px;
         font-size: 2rem;
       }
 }
-.card-body{
+.main__card-body{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     
 }
-.col-4{
+.main__main-img{
     max-height: 886px;
 }
