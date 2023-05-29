@@ -1,6 +1,7 @@
 .main__block-5 {
   font-family: "Roboto", Arial, sans-serif;
   color: #54566b;
+  overflow: hidden;
 }
 
 .block-5__title {
@@ -10,6 +11,7 @@
 }
 
 .block-5_card-body {
+  min-height: 502px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -23,12 +25,12 @@
 @media screen and (min-width: 400px) and (max-width: 1023px) {
   .block-5__card-col {
     border: 3px solid white;
+    min-height: 31rem;
   }
 }
 
 .block-5__card {
   padding: 1.5rem 1.25rem 0 1.25rem;
-  height: 31rem;
   background-color: #e5f3ff;
   color: #54566b;
 }
@@ -44,20 +46,20 @@
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 21px;
+  line-height: 1.3125rem;
 }
 
 .block-5__card_time {
   font-style: normal;
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 16px;
+  line-height: 1rem;
 }
 
 .block-5__card_price {
   font-weight: 600;
   font-size: 1.25rem;
-  line-height: 23px;
+  line-height: 1.5rem;
 }
 
 .block-5__card_button {
