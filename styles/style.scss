@@ -1,4 +1,4 @@
-@import './_var.scss';
+@import "./var.scss";
 
 
 header {
@@ -110,3 +110,44 @@ footer {
         bottom: 2rem;
     }
 }
+.main__block-3 {
+    
+    .card-title__services {
+        color: #54566B;
+    }
+    .card-body__services {
+        width: 300px;
+        height: 222px;
+        background-color: #e5f3ff;
+        border-radius: 10%; 
+        color: #54566B;  
+        font-family:"Roboto", Arial, sans-serif;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .card-title__services {
+        padding:5px;
+        margin: 10px;
+    }
+    .btn__services {
+        box-shadow: 1px 1px 1px rgba(224, 179, 128, 0.3);
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 5px;
+        background-color: #f52222;
+        color: #fff;
+    }
+    
+    .btn__services:hover {
+        background-color:#FCF5EC;
+        transition: 0.5s;
+        opacity: 0.85;
+        color: red;   
+    }
+     .modal-content__services {
+        background-color:beige;
+     }
+    }
+   
