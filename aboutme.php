@@ -40,11 +40,11 @@
                 <ul class="list-group__aboutme">
                   <li class="list-group-item__second d-flex align-items-center border-0">
                   <img src="assets/icons/dot.svg" alt="dot" class="dot__icon">
-                  <p class="list-group-item__elements" id="fith_item">УрФУ - подготовка ППС (профессорско-преподавательский состав) к Кембриджским экзаменам KET и FCE</p>
+                  <p class="list-group-item__elements" id="fith_item">Кембриджский центр УрФУ - подготовка ППС (профессорско-преподавательский состав) к Кембриджским экзаменам KET и FCE</p>
                   </li>
                   <li class="list-group-item__second d-flex align-items-center border-0">
                   <img src="assets/icons/dot.svg" alt="dot" class="dot__icon">
-                  <p class="list-group-item__elements" id="sixth_item">Международный экзаменационный центр English Lab - группы по подготовке к IELTS</p>
+                  <p class="list-group-item__elements" id="sixth_item">Международный экзаменационный центр English Lab - группы по подготовке к IELTS - проверила более 300 эссе</p>
                   </li>
                   <li class="list-group-item__second d-flex align-items-center border-0">
                   <img src="assets/icons/dot.svg" alt="dot" class="dot__icon">
