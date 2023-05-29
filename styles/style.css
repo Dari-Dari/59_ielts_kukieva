@@ -113,9 +113,9 @@ footer .img-envelope-small {
 }
 @media (max-width: 576px) {
   .btn-main {
-    height: 5rem;
+    height: 3rem;
     width: 8.25rem;
-    font-size: 1rem;
+    font-size: 0.7rem;
     width: -moz-max-content;
     width: max-content;
   }
@@ -152,9 +152,9 @@ footer .img-envelope-small {
   .card-img-right {
     position: relative;
     z-index: 1;
-    width: 40rem;
-    bottom: -70px;
-    right: 27rem;
+    width: 20rem;
+    bottom: -15px;
+    right: 14rem;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {

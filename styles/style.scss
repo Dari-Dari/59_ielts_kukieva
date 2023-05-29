@@ -128,9 +128,9 @@ $font-size:24px;
     border-radius: 10px;
     filter: drop-shadow(2px 4px 10px rgba(84, 86, 107, 0.3));
     @media (max-width:576px){
-        height:5rem;
+        height:3rem;
         width:8.25rem;
-        font-size:1rem;
+        font-size:0.7rem;
         width: max-content;
     }
     @media ( min-width:576px) and (max-width: 768px){
@@ -163,9 +163,9 @@ $font-size:24px;
 @media (max-width:576px){
     position: relative;
      z-index: 1;
-     width: 40rem;
-     bottom:-70px;
-     right: 27rem;
+     width: 20rem;
+     bottom:-15px;
+     right: 14rem;
 }
 @media ( min-width:576px) and (max-width: 768px){
     position: relative;
