@@ -1,9 +1,9 @@
 <?php require_once('header.php')?>
-<?php require_once('block-2.php')?>
-<?php require_once('block-3.php')?>
-<?php require_once('block-4.php')?>
-<?php require_once('block-5.php')?>
-<?php require_once('block-6.php')?>
+<?php require_once('main-banner.php')?>
+<?php require_once('services.php')?>
+<?php require_once('aboutme.php')?>
+<?php require_once('price.php')?>
+<?php require_once('review.php')?>
 <?php require_once('footer.php')?>
        
 
