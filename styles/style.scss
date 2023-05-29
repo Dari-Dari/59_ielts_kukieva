@@ -172,7 +172,7 @@ $font-size:24px;
     z-index: 1;
     width: 35rem;
    bottom:1%;
-   right: 14rem;
+   right: 20rem;
   }
   @media (min-width:769px) and (max-width:1199px){
     position: relative;
@@ -212,12 +212,12 @@ $font-size:24px;
     display: none;
   }
 }
-.main-text{
-    display: grid;
+.main__main-text{
     color:$color-gray;
-    align-items: end;
-    grid-template-rows:2fr;
     max-height: 886px;
+    display: grid;
+    align-items:center;
+
    }
 .main__card-title{
     font-size: 3.21rem;
@@ -237,6 +237,7 @@ $font-size:24px;
 .main__card-text{
     font-size: 1.5rem;
     padding-top: 4rem;
+    
     @media (max-width:576px){
       z-index: 6;
       font-size: 1rem;
@@ -252,8 +253,9 @@ $font-size:24px;
 }
 .main__card-body{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    
+    grid-template-rows:1fr 1fr 1fr;
+    align-content: end;
+   
 }
 .main__main-img{
     max-height: 886px;

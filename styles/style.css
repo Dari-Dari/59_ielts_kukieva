@@ -163,7 +163,7 @@ footer .img-envelope-small {
     z-index: 1;
     width: 35rem;
     bottom: 1%;
-    right: 14rem;
+    right: 20rem;
   }
 }
 @media (min-width: 769px) and (max-width: 1199px) {
@@ -218,12 +218,11 @@ footer .img-envelope-small {
   }
 }
 
-.main-text {
-  display: grid;
+.main__main-text {
   color: #54566b;
-  align-items: end;
-  grid-template-rows: 2fr;
   max-height: 886px;
+  display: grid;
+  align-items: center;
 }
 
 .main__card-title {
@@ -274,6 +273,7 @@ footer .img-envelope-small {
 .main__card-body {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
+  align-content: end;
 }
 
 .main__main-img {
