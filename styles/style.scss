@@ -1,9 +1,9 @@
 @import './_var.scss';
 
-
+/*header*/
 header {
     background-color: $color-blue;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: $font;
 
     .header-logo {
@@ -14,32 +14,27 @@ header {
         }
     }
 
-    .header-header {
+    .header-menu {
         justify-content: end;
         padding-left: 5%;
         font-weight: 500;
 
         a {
             padding-right: 6%;
+            padding-bottom: 0.3rem;
 
             &:hover {
                 opacity: 0.85;
+                transition: 0.5s;
             }
         }
     }
 
-    .header-menu {
-        margin: 0;
-        padding-left: 0;
-        justify-content: end;
 
-        .header__item {
-            padding: 0 1rem;
-        }
-    }
 
     .header__link {
         color: $color-gray;
+
     }
 
 
@@ -52,18 +47,20 @@ header {
             color: #fff;
         }
 
-        &:hover {
-            opacity: 0.9;
+        :hover {
+            opacity: 0.85;
+            transition: 0.5s;
         }
 
-
-
         .button__header-red {
-            @include red-button (2.5rem, 8rem, 1rem)
+            @include red-button (3rem, 9rem, 1rem);
         }
     }
 }
 
+/*header*/
+
+/*arrowback*/
 .back {
     width: 30px;
     height: 30px;
@@ -75,6 +72,9 @@ header {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
 }
 
+/*arrowback*/
+
+/*footer*/
 footer {
     background-color: $color-blue;
     position: relative;
@@ -110,3 +110,499 @@ footer {
         bottom: 2rem;
     }
 }
+
+/*footer*/
+
+/*main-banner*/
+$height: 73px;
+$width: 261px;
+$font-size: 24px;
+
+.btn-main:hover {
+    opacity: 0.5;
+}
+
+@mixin main($height, $width, $font-size) {
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    width: $width;
+    height: $height;
+    font-size: $font-size;
+    background-color: $color-red;
+    color: #fff;
+    border: none;
+    z-index: 5;
+    border-radius: 10px;
+    filter: drop-shadow(2px 4px 10px rgba(84, 86, 107, 0.3));
+
+    @media (max-width:576px) {
+        height: 5rem;
+        width: 8.25rem;
+        font-size: 1rem;
+        width: max-content;
+    }
+
+    @media (min-width:576px) and (max-width: 768px) {
+        height: 5rem;
+        width: 7rem;
+        font-size: 1.5rem;
+        width: max-content;
+    }
+}
+
+.btn-main {
+    @include main($height, $width, $font-size, )
+}
+
+.main__container {
+    margin-bottom: 150px;
+}
+
+.block-2 {
+    background-color: $color-blue;
+    max-height: 886px;
+    margin-bottom: 150px;
+    padding-top: 50px;
+}
+
+.card-img-right {
+    position: relative;
+    right: 500px;
+    bottom: 70px;
+    z-index: 1;
+    width: 60rem;
+
+    @media (max-width:576px) {
+        position: relative;
+        z-index: 1;
+        width: 40rem;
+        bottom: -70px;
+        right: 27rem;
+    }
+
+    @media (min-width:576px) and (max-width: 768px) {
+        position: relative;
+        z-index: 1;
+        width: 35rem;
+        bottom: 1%;
+        right: 14rem;
+    }
+
+    @media (min-width:769px) and (max-width:1199px) {
+        position: relative;
+        z-index: 1;
+        width: 40rem;
+        bottom: 3%;
+        right: 20rem;
+    }
+}
+
+
+.main__Ellipse-one {
+    position: relative;
+    bottom: 900px;
+    right: 500px;
+    z-index: -1;
+
+    @media (max-width:576px) {
+        display: none;
+    }
+
+    @media (min-width:576px) and (max-width: 768px) {
+        display: none;
+    }
+
+    @media (min-width:769px) and (max-width:1199px) {
+        display: none;
+    }
+}
+
+.main__Ellipse-two {
+    position: relative;
+    bottom: 800px;
+    right: 800px;
+    z-index: -1;
+
+    @media (max-width:576px) {
+        display: none;
+    }
+
+    @media (min-width:576px) and (max-width: 768px) {
+        display: none;
+    }
+
+    @media (min-width:769px) and (max-width:1199px) {
+        display: none;
+    }
+}
+
+.main-text {
+    display: grid;
+    color: $color-gray;
+    align-items: end;
+    grid-template-rows: 2fr;
+    max-height: 886px;
+}
+
+.main__card-title {
+    font-size: 3.21rem;
+
+    @media (max-width:576px) {
+        z-index: 6;
+        font-size: 1.5rem;
+    }
+
+    @media (min-width:576px) and (max-width: 768px) {
+        z-index: 6;
+        font-size: 2rem;
+    }
+
+    @media (min-width:769px) and (max-width:1199px) {
+        z-index: 6;
+        font-size: 2.5rem;
+    }
+}
+
+.main__card-text {
+    font-size: 1.5rem;
+    padding-top: 4rem;
+
+    @media (max-width:576px) {
+        z-index: 6;
+        font-size: 1rem;
+    }
+
+    @media (min-width:576px) and (max-width: 768px) {
+        z-index: 6;
+        font-size: 1.5rem;
+    }
+
+    @media (min-width:769px) and (max-width:1199px) {
+        z-index: 6;
+        font-size: 2rem;
+    }
+}
+
+.main__card-body {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+.main__main-img {
+    max-height: 886px;
+}
+
+/*main-banner*/
+
+/*block-3 services*/
+.main__block-3 {
+
+    .services_card-body {
+        width: 300px;
+        height: 222px;
+        background-color: #e5f3ff;
+        border-radius: 10%;
+        color: #54566B;
+        font-family: "Roboto", Arial, sans-serif;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .services__card-title {
+        padding: 5px;
+        margin: 10px;
+        color: $color-gray;
+    }
+
+    .services__btn {
+        box-shadow: 2px 4px 10px rgba(84, 86, 107, 0.3);
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 5px;
+        background-color: $color-red;
+    }
+
+    .services__btn:hover {
+        background-color: #FCF5EC;
+        transition: 0.5s;
+        opacity: 0.85;
+        color: red;
+    }
+
+    .modal-content {
+        background-color: beige;
+    }
+}
+
+/*block-3 services*/
+
+/*block-4 aboutme*/
+.block-4 {
+    position: relative;
+    font-family: $font;
+    color: $color-gray;
+    margin: 6rem auto 6rem auto;
+
+    .title-block-4 {
+        font-weight: 700;
+        font-size: 4rem;
+        line-height: 4.7rem;
+        margin: 0 0 4rem 0;
+
+    }
+
+    .block-4__text-block {
+        padding-left: 4.5rem;
+    }
+
+
+
+    .card-body__title {
+        margin: 2rem 0 2rem 0;
+
+        .card-title__block-4 {
+            font-weight: 500;
+            font-size: 2rem;
+            line-height: 2.375rem;
+            color: $color-gray;
+            margin: 0;
+        }
+
+        .card-subtitle__block-4 {
+            font-weight: 500;
+            font-size: 1.5rem;
+            line-height: 1.75rem;
+            color: $color-gray;
+            margin: 0;
+        }
+    }
+
+    .list-group__block4 {
+        max-width: 37.125rem;
+        padding-left: 0;
+        margin-bottom: 0;
+
+        .list-group-item,
+        .list-group-item__second {
+            padding: 0;
+            font-weight: 400;
+            font-size: 1.125rem;
+            line-height: 1.3rem;
+            color: $color-gray;
+        }
+
+        .list-group-item {
+            padding-bottom: 1.4rem;
+
+            .bi-arrow-right-circle {
+                margin-right: 1.375rem;
+            }
+        }
+
+        .list-group-item__second {
+            padding-bottom: 1rem;
+
+            .bi-arrow-right-circle {
+                margin-right: 1.375rem;
+            }
+
+            .dot__icon {
+                margin-right: 0.625rem;
+            }
+        }
+
+        #second_item {
+            max-width: 23.9375rem;
+        }
+
+        #fourth_item {
+            max-width: 29.9375rem;
+        }
+
+        #sixth_item {
+            max-width: 29.4375rem;
+        }
+
+        #eighth_item {
+            max-width: 29.375rem;
+        }
+
+        #ninth_item {
+            max-width: 30.7rem;
+        }
+
+        .list-group-item__elements {
+            margin: 0;
+        }
+
+        .list-group__aboutme {
+            padding-left: 3.58rem;
+        }
+    }
+
+    .block4__img {
+        max-width: 100%;
+        max-height: 100%;
+        position: relative;
+    }
+
+}
+
+.circle-aboutme {
+    position: absolute;
+    right: 5rem;
+    top: 22rem;
+    z-index: -1;
+}
+
+.circle-aboutme-up {
+    position: relative;
+    max-width: 399px;
+    width: 100%;
+    left: 1rem;
+    top: -59rem;
+    z-index: -1;
+}
+
+/*block-4 aboutme*/
+
+/*block-5 price*/
+.main__block-5 {
+    font-family: $font;
+    color: $color-gray;
+
+}
+
+.block-5__title {
+    padding: 5rem 0 2.875rem;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.block-5_card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.block-5__card-col {
+    @media screen and (max-width: 399px) {
+        padding-bottom: 1rem;
+    }
+
+    @media screen and (min-width: 400px) and (max-width: 1023px) {
+        border: 3px solid white;
+    }
+}
+
+.block-5__card {
+    padding: 1.5rem 1.25rem 0 1.25rem;
+    height: 31rem;
+    background-color: $color-blue;
+    color: $color-gray;
+}
+
+.block-5__card-title {
+    text-align: left;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5625rem;
+}
+
+.block-5__list-group {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 21px;
+}
+
+.block-5__card_time {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 16px;
+}
+
+.block-5__card_price {
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 23px;
+}
+
+.block-5__card_button {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.block-5__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include red-button (2.5rem, 8rem, 1rem);
+
+    &:hover {
+        opacity: 0.9;
+        transition: 0.5s all;
+    }
+}
+
+/*block-5 price*/
+
+
+/*block-6 reviews*/
+
+.block-6 {
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.card-wrapper__block-6 {
+    display: flex;
+    justify-content: center;
+}
+
+.card__block-6 {
+    margin: 1%;
+    padding: 1%;
+    background-color: $color-blue;
+}
+
+.img__block-6 {
+    box-shadow: 0px 1px 4px 1px $color-gray;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5vw;
+    height: 10vh;
+    top: 50%;
+
+    background-color: $color-pink;
+    opacity: 0.85;
+    border-radius: 25%;
+}
+
+
+.title__block-6,
+.text__block-6 {
+    font-family: $font;
+    color: $color-gray;
+}
+
+.title__block-6 {
+    margin: 10%;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.text__block-6 {
+    width: 70%;
+    font-size: 70%;
+    font-weight: 400;
+}
+
+/*block-6 reviews*/

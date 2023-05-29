@@ -21,7 +21,7 @@
     <header class="header">
         <a name="header-anchor"></a>
         <nav class="navbar navbar-expand-lg ">
-            <div class="container-fluid">                
+            <div class="container-fluid">
                 <a class="navbar-brand header-logo" href="#">
                     <img src="/assets/icons/logo.svg" alt="логотип" class="header_logo">
                 </a>
@@ -30,15 +30,15 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse header-header" id="navbarSupportedContent">
-                            <a class="nav-link active header__link" aria-current="page" href="#services-anchor">Услуги</a>
-                            <a class="nav-link active header__link" aria-current="page" href="#aboutme-anchor">Обо мне</a>
-                            <a class="nav-link active header__link" aria-current="page" href="#price-anchor">Стоимость</a>
-                            <a class="nav-link active header__link" aria-current="page" href="#reviews-anchor">Отзывы</a>
-                        <form class="d-flex button__header" role="search">
-                        <button class="btn button__header-red" type="button">
-                            <a class="header__button" href="https://t.me/ielts_kukieva">Связаться</a> </button>
-                    </form>
+                <div class="collapse navbar-collapse header-menu mt-md-3" id="navbarSupportedContent">
+                    <a class="nav-link active header__link" aria-current="page" href="#services-anchor">Услуги</a>
+                    <a class="nav-link active header__link" aria-current="page" href="#aboutme-anchor">Обо мне</a>
+                    <a class="nav-link active header__link" aria-current="page" href="#price-anchor">Стоимость</a>
+                    <a class="nav-link active header__link" aria-current="page" href="#reviews-anchor">Отзывы</a>
+                    <div class="button__header pb-sm-2 my-sm-4">
+                        <a class="button__header-red btn btn-danger d-flex align-items-center justify-content-center p-0 m-0"
+                            href="https://t.me/ielts_kukieva" role="button">Связаться</a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -48,18 +48,18 @@
         <section class="main__block-2 block-2">
             <div class="container-fluid">
                 <div class="card-mb-3 main__banner">
-                    <div class="row g-4">
-                        <div class="col-8">
-                            <div class="card-body">
-                                <h5 class="card-title fs-1">IELTS. Качественно, профессионально.</h5>
-                                <p class="card-text">Качественно, профессионально - Ваше серьёзное отношение к обучению
-                                    обязательно. Через анализ языка - к свободному общению.</p>
-                                <button class="btn btn-outline-primary" type="submit">Связаться</button>
+                    <div class="row g-4 justify-content-around">
+                        <div class="col-6">
+                            <div class="card-body main__text">
+                                <p class="main__banner-ielts">IELTS</p>
+                                <p class="main__banner-text">Качественно,</p>
+                                <p class="main__banner-text">профессионально.</p>
+                                <p class="card-text">Мария Кукиева</p>
+                                <p class="card-text">English Teacher</p>
+                                <button class="btn btn-outline-primary main__button" type="submit">Связаться</button>
                             </div>
                         </div>
-                        <div class="col-4">
-                            <img src="assets/images/IMG_8877 без фона.png" style="max-width: 230px;" class="card-img-right" alt="welcome picture">
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -158,25 +158,101 @@
         </section>
 
         <section class="main__block-4 block-4">
-            <div class="container-fluid">
+
+            <div class="container">
                 <a name="aboutme-anchor"></a>
-                <h5 class="card-title fs-1">Обо мне</h5>
-                <div class="card mb-lg-0" style="max-width: 1500px;">
+                <div>
+                    <h5 class="card-title title-block-4">Обо мне</h5>
+                </div>
+                <div class="mb-lg-0 border-0">
                     <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="assets/images/b4_aboutme_img.JPG" class="img-fluid rounded-start" alt="...">
+                        <div class="col-md-6 block-4__image-block">
+                            <img src="assets/images/b4_aboutme_img.JPG" class="img-fluid rounded-start block4__img"
+                                alt="Мария Кукиева">
+                            <img src="/assets/images/Ellipse-about-me-up.png" alt="circle"
+                                class="circle-aboutme-up d-none d-md-block">
                         </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Мария Кукиева</h5>
-                                <p class="card-text">Лингвист-переводчик, Уральский Федеральный Университет (УРФУ),
-                                    Физико-технический факультет, Кафедра иностранных языков, г. Екатеринбург (диплом с
-                                    отличием)</p>
+                        <div class="col-md-6 block-4__text-block p-sm-1">
+                            <div class="block-4__card-body">
+                                <div class="card-body__title">
+                                    <h6 class="card-title__block-4">Мария Кукиева</h6>
+                                    <h7 class="card-subtitle__block-4">English teacher</h7>
+                                </div>
+                                <ul class=" list-group__block4 list-group-flush">
+                                    <li class="list-group-item d-flex align-items-center border-0">
+                                        <img src="assets/icons/icon _arrow circle right_.svg"
+                                            class="bi bi-arrow-right-circle" alt="icon arrow circle right">
+                                        <p class="list-group-item__elements" id="first_item">Лингвист-переводчик,
+                                            Уральский Федеральный
+                                            Университет (УрФУ), Физико-технический факультет,
+                                            Кафедра
+                                            иностранных языков, г. Екатеринбург (диплом с отличием)</p>
+                                    </li>
+                                    <li class="list-group-item d-flex align-items-center border-0">
+                                        <img src="assets/icons/icon _arrow circle right_.svg"
+                                            class="bi bi-arrow-right-circle" alt="icon arrow circle right">
+                                        <p class="list-group-item__elements" id="second_item">Международные сертификаты
+                                            по методике
+                                            преподавания  - Cambridge CELTA, TKT</p>
+                                    </li>
+                                    <li class="list-group-item d-flex align-items-center border-0">
+                                        <img src="assets/icons/icon _arrow circle right_.svg"
+                                            class="bi bi-arrow-right-circle" alt="icon arrow circle right">
+                                        <p class="list-group-item__elements" id="third_item">CPE (C2 English Language
+                                            Proficiency)</p>
+                                    </li>
+                                    <li class="list-group-item__second d-flex align-items-center border-0">
+                                        <img src="assets/icons/icon _arrow circle right_.svg"
+                                            class="bi bi-arrow-right-circle" alt="icon arrow circle right">
+                                        <p class="list-group-item__elements" id="fourth_item">10 лет преподаю английский
+                                            язык, из них 9 лет
+                                            готовлю студентов к IELTS:</p>
+                                    </li>
+                                    <ul class="list-group__aboutme">
+                                        <li class="list-group-item__second d-flex align-items-center border-0">
+                                            <img src="assets/icons/dot.svg" alt="dot" class="dot__icon">
+                                            <p class="list-group-item__elements" id="fith_item">УрФУ - подготовка ППС
+                                                (профессорско-преподавательский состав) к Кембриджским экзаменам KET и
+                                                FCE</p>
+                                        </li>
+                                        <li class="list-group-item__second d-flex align-items-center border-0">
+                                            <img src="assets/icons/dot.svg" alt="dot" class="dot__icon">
+                                            <p class="list-group-item__elements" id="sixth_item">Международный
+                                                экзаменационный центр English
+                                                Lab - группы по подготовке к IELTS</p>
+                                        </li>
+                                        <li class="list-group-item__second d-flex align-items-center border-0">
+                                            <img src="assets/icons/dot.svg" alt="dot" class="dot__icon">
+                                            <p class="list-group-item__elements" id="seventh_item">Тьютор на курсе
+                                                Академического письма
+                                                (формат IELTS)</p>
+                                        </li>
+                                        <li class="list-group-item__second d-flex align-items-center border-0">
+                                            <img src="assets/icons/dot.svg" alt="dot" class="dot__icon">
+                                            <p class="list-group-item__elements" id="eighth_item">Создала свой курс по
+                                                написанию писем - IELTS
+                                                General (Writing Task 1)</p>
+                                        </li>
+                                        <li class="list-group-item__second d-flex align-items-center border-0">
+                                            <img src="assets/icons/dot.svg" alt="dot" class="dot__icon">
+                                            <p class="list-group-item__elements" id="ninth_item">Консультирую
+                                                преподавателей по вопросам
+                                                подготовки к IELTS</p>
+                                        </li>
+                                    </ul>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div>
+                    <img src="/assets/images/Ellipse-about-me.png" alt="circle" class="circle-aboutme">
+
+                </div>
+
+
             </div>
+
         </section>
 
         <section class="main__block-5 block-5">
@@ -216,10 +292,9 @@
         </section>
 
         <section class="main__block-6 block-6">
-            <div class="container-fluid">
-                <a name="reviews-anchor"></a>
-                <h5 class="card-title fs-1">Отзывы</h5>
-                <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="container">
+                <h5 class="card-title fs-1 title__block-6">Отзывы</h5>
+                <div id="carouselExampleDark" class="carousel carousel-dark slide d-none d-sm-block">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
                             aria-current="true" aria-label="Slide 1"></button>
@@ -230,24 +305,102 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="10000">
-                            <img src="assets/images/b5_reviews_img2.png" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Иван Иванов</h5>
-                                <p>Отзыв .</p>
+                            <div class="card-wrapper__block-6">
+                                <div class="card card__block-6" style="width: 18rem">
+                                    <img src="/assets/images/2-Golyakova.jpg" class="card-img-top img__block-6"
+                                        alt="" />
+                                    <div class="card-body">
+                                        <p class="card-text text__block-6">
+                                            Наталия Голякова, менеджер проектов, г.Ванкувер, Канада <br>
+                                            @nicoll_99 <br />
+                                            Индивидуальная подготовка к IELTS
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card card__block-6" style="width: 18rem">
+                                    <img src="/assets/images/3-Koltsova.jpg" class="card-img-top img__block-6" alt="" />
+                                    <div class="card-body">
+                                        <p class="card-text text__block-6">
+                                            Мария Кольцова, журналист, г.Тбилиси, Грузия <br>
+                                            @kolt_mi <br>
+                                            Индивидуальная подготовка к IELTS
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card card__block-6" style="width: 18rem">
+                                    <img src="/assets/images/4-batekin.jpg" class="card-img-top img__block-6" alt="" />
+                                    <div class="card-body">
+                                        <p class="card-text text__block-6">
+                                            Станислав Батекин, инженер, г.Аделаида, Австралия. <br>
+                                            @sbatekin <br>
+                                            Индивидуальная подготовка к IELTS <br>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="carousel-item" data-bs-interval="2000">
-                            <img src="assets/images/b5_reviews_img2.png" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Петр Петров</h5>
-                                <p>Отзыв.</p>
+                            <div class="card-wrapper__block-6">
+                                <div class="card card__block-6" style="width: 18rem">
+                                    <img src="/assets/images/1-1Ivanova.jpg" class="card-img-top img__block-6" alt="" />
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card card__block-6" style="width: 18rem">
+                                    <img src="/assets/images/1-2Ivanova.jpg" class="card-img-top img__block-6" alt="" />
+                                    <div class="card-body">
+                                        <p class="card-text">
+
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card card__block-6" style="width: 18rem">
+                                    <img src="/assets/images/1-3Ivanova.jpg" class="card-img-top img__block-6" alt="" />
+                                    <div class="card-body">
+                                        <p class="card-text text__block-6">
+                                            Ангелина Иванова, журналист, г.Токио, Япония <br>
+                                            @koalified.coach <br>
+                                            Индивидуальная подготовка к IELTS <br>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="assets/images/b5_reviews_img2.png" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Сергей Сергеев</h5>
-                                <p>Отзыв</p>
+                            <div class="card-wrapper__block-6">
+                                <div class="card card__block-6" style="width: 18rem">
+                                    <img src="/images/6-Kulakova.jpg" class="card-img-top img__block-6" alt="" />
+                                    <div class="card-body">
+                                        <p class="card-text text__block-6">
+                                            Юлия Кулакова, архитектор, г.Окленд, Новая Зеландия <br>
+                                            @_julia_alikina <br>
+                                            Групповая подготовка к IELTS <br>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card card__block-6" style="width: 18rem">
+                                    <img src="/assets/images/7-Trunov.jpg" class="card-img-top img__block-6" alt="" />
+                                    <div class="card-body">
+                                        <p class="card-text text__block-6">
+                                            Георгий Трунов, студент Университета прикладных наук Ханзе (Hanze UAS),
+                                            г.Гронинген, Нидерланды <br>
+                                            Консультация по формату IELTS
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card card__block-6" style="width: 18rem">
+                                    <img src="/assets/images/10-1Vaginskaya.jpg" class="card-img-top img__block-6"
+                                        alt="" />
+                                    <div class="card-body">
+                                        <p class="card-text text__block-6">
+                                            Валерия Важинская, учитель английского языка <br>
+                                            @leranimess <br>
+                                            Консультация для преподавателей по вопросам подготовки к IELTS
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -262,6 +415,172 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
+
+
+                <div id="carouselExampleIndicatorsSmallScreen" class="carousel slide d-block d-sm-none">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                            aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                            aria-label="Slide 7"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+                            aria-label="Slide 8"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
+                            aria-label="Slide 9"></button>
+
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card-wrapper__block-6">
+                                <div class="card card__block-6" style="width: 18rem">
+                                    <img src="/59_ielts_kukieva/assets/images/2-Golyakova.jpg"
+                                        class="card-img-top img__block-6" alt="" />
+                                    <div class="card-body">
+                                        <p class="card-text text__block-6">
+                                            Наталия Голякова, менеджер проектов, г.Ванкувер, Канада <br>
+                                            @nicoll_99 <br />
+                                            Индивидуальная подготовка к IELTS
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card-wrapper__block-6">
+                                    <div class="card card__block-6" style="width: 18rem">
+                                        <img src="/59_ielts_kukieva/assets/images/3-Koltsova.jpg"
+                                            class="card-img-top img__block-6" alt="" />
+                                        <div class="card-body">
+                                            <p class="card-text text__block-6">
+                                                Мария Кольцова, журналист, г.Тбилиси, Грузия <br>
+                                                @kolt_mi <br>
+                                                Индивидуальная подготовка к IELTS
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card-wrapper__block-6">
+                                    <div class="card card__block-6" style="width: 18rem">
+                                        <img src="/59_ielts_kukieva/assets/images/4-batekin.jpg"
+                                            class="card-img-top img__block-6" alt="" />
+                                        <div class="card-body">
+                                            <p class="card-text text__block-6">
+                                                Станислав Батекин, инженер, г.Аделаида, Австралия. <br>
+                                                @sbatekin <br>
+                                                Индивидуальная подготовка к IELTS <br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item active">
+                                <div class="card-wrapper__block-6">
+                                    <div class="card card__block-6" style="width: 18rem">
+                                        <img src="/59_ielts_kukieva/assets/images/1-1Ivanova.jpg"
+                                            class="card-img-top img__block-6" alt="" />
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item active">
+                                <div class="card-wrapper__block-6">
+                                    <div class="card card__block-6" style="width: 18rem">
+                                        <img src="/59_ielts_kukieva/assets/images/1-2Ivanova.jpg"
+                                            class="card-img-top img__block-6" alt="" />
+                                        <div class="card-body">
+                                            <p class="card-text">
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item active">
+                                <div class="card-wrapper__block-6">
+                                    <div class="card card__block-6" style="width: 18rem">
+                                        <img src="/59_ielts_kukieva/assets/images/1-3Ivanova.jpg"
+                                            class="card-img-top img__block-6" alt="" />
+                                        <div class="card-body">
+                                            <p class="card-text text__block-6">
+                                                Ангелина Иванова, журналист, г.Токио, Япония <br>
+                                                @koalified.coach <br>
+                                                Индивидуальная подготовка к IELTS <br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item active">
+                                <div class="card-wrapper__block-6">
+                                    <div class="card card__block-6" style="width: 18rem">
+                                        <img src="/59_ielts_kukieva/assets/images/6-Kulakova.jpg"
+                                            class="card-img-top img__block-6" alt="" />
+                                        <div class="card-body">
+                                            <p class="card-text text__block-6">
+                                                Юлия Кулакова, архитектор, г.Окленд, Новая Зеландия <br>
+                                                @_julia_alikina <br>
+                                                Групповая подготовка к IELTS <br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item active">
+                                <div class="card-wrapper__block-6">
+                                    <div class="card card__block-6" style="width: 18rem">
+                                        <img src="/assets/images/7-Trunov.jpg" class="card-img-top img__block-6"
+                                            alt="" />
+                                        <div class="card-body">
+                                            <p class="card-text text__block-6">
+                                                Георгий Трунов, студент Университета прикладных наук Ханзе (Hanze UAS),
+                                                г.Гронинген, Нидерланды <br>
+                                                Консультация по формату IELTS
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item active">
+                                <div class="card-wrapper__block-6">
+                                    <div class="card card__block-6" style="width: 18rem">
+                                        <img src="/assets/images/10-1Vaginskaya.jpg" class="card-img-top img__block-6"
+                                            alt="" />
+                                        <div class="card-body">
+                                            <p class="card-text text__block-6">
+                                                Валерия Важинская, учитель английского языка <br>
+                                                @leranimess <br>
+                                                Консультация для преподавателей по вопросам подготовки к IELTS
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button"
+                            data-bs-target="#carouselExampleIndicatorsSmallScreen" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button"
+                            data-bs-target="#carouselExampleIndicatorsSmallScreen" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -271,31 +590,33 @@
             </a>
         </div>
 
-        
 
-<footer  class="footer">
-    <div class="container-fluid">
-        <img class="d-none d-md-block img-envelope" src="/assets/icons/Envelope_no_background.png" alt="img-envelope">
-        <img class="d-block d-md-none img-envelope-small" src="/assets/icons/Envelope_no_background.png" alt="img-envelope">
-        <div class="row justify-content-end pb-2">
-            <div class="col footer__text-autor">
-                    Мария Кукиева <span>&copy;</span> 2023
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <img class="d-none d-md-block img-envelope" src="/assets/icons/Envelope_no_background.png"
+                    alt="img-envelope">
+                <img class="d-none d-sm-block d-md-none img-envelope-small"
+                    src="/assets/icons/Envelope_no_background.png" alt="img-envelope">
+                <div class="row justify-content-end pb-2">
+                    <div class="col footer__text-autor">
+                        Мария Кукиева <span>&copy;</span> 2023
+                    </div>
+                    <div class="col-10 footer__icon">
+                        <a href="https://instagram.com/ielts_kukieva?igshid=MzRlODBiNWFlZA==">
+                            <img src="/assets/icons/icon _instagram.svg" alt="instagram">
+                        </a>
+
+                    </div>
+                    <div class="col footer__icon">
+                        <a href="https://t.me/ielts_kukieva">
+                            <img src="/assets/icons/icon _telegram.svg" alt="telegram">
+                        </a>
+
+                    </div>
+                </div>
             </div>
-            <div class="col footer__icon">
-                <a href="https://instagram.com/ielts_kukieva?igshid=MzRlODBiNWFlZA==">
-                    <img src="/assets/icons/icon _instagram.svg" alt="instagram">
-                </a>
-                
-        </div>
-        <div class="col  footer__icon">
-            <a href="https://t.me/ielts_kukieva">
-                <img src="/assets/icons/icon _telegram.svg" alt="telegram">
-            </a>
-            
-    </div>
-        </div>
-    </div>
-</footer>
+        </footer>
 
     </main>
 
