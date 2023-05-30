@@ -306,9 +306,9 @@ $font-size: 24px;
         height: 235px;
         background-color: #e5f3ff;
         border-radius: 10%; 
-        color: #54566B;  
-        font-family:"Roboto", Arial, sans-serif;
-        font-size: 16px;
+        color: $color-gray;  
+        font-family: $font;
+        font-size: 1rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -321,7 +321,6 @@ $font-size: 24px;
     .btn__services {
         box-shadow: 1px 1px 1px rgba(224, 179, 128, 0.3);
         border-radius: 5px;
-        cursor: pointer;
         margin-top: 5px;
         background-color: #f52222;
         color: #fff;
@@ -338,10 +337,15 @@ $font-size: 24px;
     }
      .modal-content__services {
         background-color:beige;
-        max-width: 700px;
-        width: 100%;
        
      }
+
+     .services__modal-header {
+        display: grid;
+        grid-template-columns: 15fr 1fr;
+     }
+
+    
 .services__tittle-top {
     font-size: 4rem;
     margin-bottom: 4rem;
@@ -349,8 +353,6 @@ $font-size: 24px;
     font-family: $font;
     color: $color-gray;
 }
-     
-
         }
 
         @media screen and (min-width:576px){
@@ -495,7 +497,7 @@ $font-size: 24px;
 .main__block-5 {
     font-family: $font;
     color: $color-gray;
-
+    overflow: hidden;
 }
 
 .block-5__title {
@@ -505,24 +507,29 @@ $font-size: 24px;
 }
 
 .block-5_card-body {
+
+    min-height: 502px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
 .block-5__card-col {
+
     @media screen and (max-width: 399px) {
         padding-bottom: 1rem;
     }
 
     @media screen and (min-width: 400px) and (max-width: 1023px) {
         border: 3px solid white;
+        min-height: 31rem;
     }
 }
 
 .block-5__card {
+
     padding: 1.5rem 1.25rem 0 1.25rem;
-    height: 31rem;
+
     background-color: $color-blue;
     color: $color-gray;
 }
@@ -538,20 +545,20 @@ $font-size: 24px;
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
-    line-height: 21px;
+    line-height: 1.3125rem;
 }
 
 .block-5__card_time {
     font-style: normal;
     font-weight: 400;
     font-size: 0.875rem;
-    line-height: 16px;
+    line-height: 1rem;
 }
 
 .block-5__card_price {
     font-weight: 600;
     font-size: 1.25rem;
-    line-height: 23px;
+    line-height: 1.5rem;
 }
 
 .block-5__card_button {

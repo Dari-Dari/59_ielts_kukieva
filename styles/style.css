@@ -294,9 +294,9 @@ footer .img-envelope-small {
   height: 235px;
   background-color: #e5f3ff;
   border-radius: 10%;
-  color: #54566B;
+  color: #54566b;
   font-family: "Roboto", Arial, sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -308,7 +308,6 @@ footer .img-envelope-small {
 .main__block-3 .btn__services {
   box-shadow: 1px 1px 1px rgba(224, 179, 128, 0.3);
   border-radius: 5px;
-  cursor: pointer;
   margin-top: 5px;
   background-color: #f52222;
   color: #fff;
@@ -323,8 +322,10 @@ footer .img-envelope-small {
 }
 .main__block-3 .modal-content__services {
   background-color: beige;
-  max-width: 700px;
-  width: 100%;
+}
+.main__block-3 .services__modal-header {
+  display: grid;
+  grid-template-columns: 15fr 1fr;
 }
 .main__block-3 .services__tittle-top {
   font-size: 4rem;
@@ -449,6 +450,7 @@ footer .img-envelope-small {
 .main__block-5 {
   font-family: "Roboto", Arial, sans-serif;
   color: #54566b;
+  overflow: hidden;
 }
 
 .block-5__title {
@@ -458,6 +460,7 @@ footer .img-envelope-small {
 }
 
 .block-5_card-body {
+  min-height: 502px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -471,12 +474,12 @@ footer .img-envelope-small {
 @media screen and (min-width: 400px) and (max-width: 1023px) {
   .block-5__card-col {
     border: 3px solid white;
+    min-height: 31rem;
   }
 }
 
 .block-5__card {
   padding: 1.5rem 1.25rem 0 1.25rem;
-  height: 31rem;
   background-color: #e5f3ff;
   color: #54566b;
 }
@@ -492,20 +495,20 @@ footer .img-envelope-small {
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 21px;
+  line-height: 1.3125rem;
 }
 
 .block-5__card_time {
   font-style: normal;
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 16px;
+  line-height: 1rem;
 }
 
 .block-5__card_price {
   font-weight: 600;
   font-size: 1.25rem;
-  line-height: 23px;
+  line-height: 1.5rem;
 }
 
 .block-5__card_button {
