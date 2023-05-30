@@ -114,17 +114,13 @@ footer {
 /*footer*/
 
 /*main-banner*/
-$height: 73px;
-$width: 261px;
-$font-size: 24px;
-
-.btn-main:hover {
-    opacity: 0.5;
-}
-
+$height:73px;
+$width:261px;
+$font-size:24px;
+ .btn-main:hover{opacity: 0.5;}
 @mixin main($height, $width, $font-size) {
-    text-decoration: none;
-    padding: 1rem 1.5rem;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
     width: $width;
     height: $height;
     font-size: $font-size;
@@ -134,164 +130,86 @@ $font-size: 24px;
     z-index: 5;
     border-radius: 10px;
     filter: drop-shadow(2px 4px 10px rgba(84, 86, 107, 0.3));
-
-    @media (max-width:576px) {
-        height: 5rem;
-        width: 8.25rem;
-        font-size: 1rem;
+    @media (max-width:576px){
+        height:3rem;
+        width:8.25rem;
+        font-size:0.7rem;
         width: max-content;
     }
-
-    @media (min-width:576px) and (max-width: 768px) {
-        height: 5rem;
-        width: 7rem;
-        font-size: 1.5rem;
+    @media ( min-width:576px) and (max-width: 768px){
+        height:5rem;
+        width:7rem;
+        font-size:1.5rem;
         width: max-content;
+      }
+}
+
+@media screen and (max-width:576px) {
+    .block-2 {
+        background-image: url(/assets/images/main-banner-mobile.png);
+        border-color: $color-blue;
+        background-size: cover;
+    background-position: center center;
+    padding: 3rem 0;
+    font-size: 1rem;
     }
 }
 
-.btn-main {
-    @include main($height, $width, $font-size, )
+.btn-main{
+    @include main($height, $width, $font-size,)
+  
+}
+@media screen and (min-width:577px) {
+.block-2{
+    background-image: url(/assets/images/main-banner.png);
+    background-color: $color-blue; 
+    margin-bottom: 5rem;
+    padding: 15rem 0 20rem;
+    background-size: cover;
+    background-position: center center;
+}
 }
 
-.main__container {
-    margin-bottom: 150px;
-}
-
-.block-2 {
-    background-color: $color-blue;
+.main__main-text{
+    color:$color-gray;
     max-height: 886px;
-    margin-bottom: 150px;
-    padding-top: 50px;
-}
-
-.card-img-right {
-    position: relative;
-    right: 500px;
-    bottom: 70px;
-    z-index: 1;
-    width: 60rem;
-
-    @media (max-width:576px) {
-        position: relative;
-        z-index: 1;
-        width: 40rem;
-        bottom: -70px;
-        right: 27rem;
-    }
-
-    @media (min-width:576px) and (max-width: 768px) {
-        position: relative;
-        z-index: 1;
-        width: 35rem;
-        bottom: 1%;
-        right: 14rem;
-    }
-
-    @media (min-width:769px) and (max-width:1199px) {
-        position: relative;
-        z-index: 1;
-        width: 40rem;
-        bottom: 3%;
-        right: 20rem;
-    }
-}
-
-
-.main__Ellipse-one {
-    position: relative;
-    bottom: 900px;
-    right: 500px;
-    z-index: -1;
-
-    @media (max-width:576px) {
-        display: none;
-    }
-
-    @media (min-width:576px) and (max-width: 768px) {
-        display: none;
-    }
-
-    @media (min-width:769px) and (max-width:1199px) {
-        display: none;
-    }
-}
-
-.main__Ellipse-two {
-    position: relative;
-    bottom: 800px;
-    right: 800px;
-    z-index: -1;
-
-    @media (max-width:576px) {
-        display: none;
-    }
-
-    @media (min-width:576px) and (max-width: 768px) {
-        display: none;
-    }
-
-    @media (min-width:769px) and (max-width:1199px) {
-        display: none;
-    }
-}
-
-.main-text {
     display: grid;
-    color: $color-gray;
-    align-items: end;
-    grid-template-rows: 2fr;
-    max-height: 886px;
-}
+    align-items:center;
 
-.main__card-title {
+   }
+.main__card-title{
     font-size: 3.21rem;
-
-    @media (max-width:576px) {
+    @media (max-width:576px){
         z-index: 6;
-        font-size: 1.5rem;
-    }
-
-    @media (min-width:576px) and (max-width: 768px) {
+        font-size: 1rem;
+      }
+      @media ( min-width:576px) and (max-width: 768px){
         z-index: 6;
         font-size: 2rem;
-    }
-
-    @media (min-width:769px) and (max-width:1199px) {
+      }
+      @media (min-width:769px) and (max-width:1199px){
         z-index: 6;
         font-size: 2.5rem;
-    }
+      }
 }
-
-.main__card-text {
+.main__card-text{
     font-size: 1.5rem;
-    padding-top: 4rem;
-
-    @media (max-width:576px) {
-        z-index: 6;
-        font-size: 1rem;
+    padding-top: 1rem;
+    
+    @media (max-width:576px){
+      z-index: 6;
+      font-size: 1rem;
     }
-
-    @media (min-width:576px) and (max-width: 768px) {
+    @media ( min-width:576px) and (max-width: 768px){
         z-index: 6;
         font-size: 1.5rem;
-    }
-
-    @media (min-width:769px) and (max-width:1199px) {
+      }
+      @media (min-width:769px) and (max-width:1199px){
         z-index: 6;
         font-size: 2rem;
-    }
+      }
 }
 
-.main__card-body {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-
-}
-
-.main__main-img {
-    max-height: 886px;
-}
 
 /*main-banner*/
 
@@ -501,18 +419,18 @@ $font-size: 24px;
 }
 
 .block-5__title {
-    padding: 5rem 0 2.875rem;
+    padding: 1rem 0 2.875rem;
     font-weight: 700;
     font-size: 4rem;
 }
 
 .block-5_card-body {
-
-    min-height: 502px;
+    height: 31.735rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
+
 
 .block-5__card-col {
 
@@ -520,10 +438,18 @@ $font-size: 24px;
         padding-bottom: 1rem;
     }
 
-    @media screen and (min-width: 400px) and (max-width: 1023px) {
+    @media screen and (min-width: 400px) and (max-width: 990px) {
         border: 3px solid white;
         min-height: 31rem;
     }
+
+    @media screen and (min-width: 991px) and (max-width: 1399px) {
+        
+        .block-5_card-body {
+        height: 40rem;
+
+    }
+}
 }
 
 .block-5__card {
