@@ -1,18 +1,20 @@
+
 <section class="main__block-3 block-3">
             <div class="container">
-                <div class="card-title services__card-title fs-1">
+                <div class="card-title fs-1">
                     <h1>Услуги</h1>
                 </div>
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md
+                    -3">
                         <div class="card-modal">
-                            <div class="card-body services_card-body">
-                                <div class="card-title services__card-title">
-                                    <h5 class="card-title services__card-title text-center">Exam Preparation Classes</h5>
+                            <div class="card-body__services">
+                                <div class="card-title__services">
+                                    <h5 class="card-title text-center">Exam Preparation Classes</h5>
                                     <p class="card-text">Индивидуальные занятия по подготовке к IELTS</p>
                                 </div>
                                 <div class="text-center p-4">
-                                    <button type="button" class="services__btn btn btn-danger btn-sm" data-bs-toggle="modal"
+                                    <button type="button" class="btn__services btn-danger btn-sm" data-bs-toggle="modal"
                                         data-bs-target="#exampleModal">Подробнее</button>
                                 </div>
 
@@ -20,7 +22,7 @@
                                 <div class="modal fade" id="exampleModal" tabindex="-1"
                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
-                                        <div class="modal-content">
+                                        <div class="modal-content__services">
                                             <div class="modal-header">
                                                 <h1 class="modal-title fs-5 text-center" id="exampleModalLabel"><b>Exam
                                                         Preparation
@@ -150,7 +152,7 @@
                                                 </p>
                                             </div>
                                             <div class="modal-footer">
-                                                <button type="button" class="btn btn-danger btn-sm"
+                                                <button type="button" class="btn__services btn-danger btn-sm"
                                                     data-bs-dismiss="modal">Закрыть</button>
                                             </div>
                                         </div>
@@ -161,14 +163,14 @@
                     </div>
                     <div class="col-md-3">
                         <div class="card-modal">
-                            <div class="card-body">
-                                <div class="card-title">
+                            <div class="card-body__services">
+                                <div class="card-title__services">
                                     <h5 class="card-title text-center">IELTS Writing</h5>
                                     <p class="card-text">Индивидуальные занятия по подготовке к письменной части IELTS
                                     </p>
                                 </div>
                                 <div class="text-center">
-                                    <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal"
+                                    <button type="button" class="btn__services btn-danger btn-sm" data-bs-toggle="modal"
                                         data-bs-target="#exampleModal-content">Подробнее</button>
                                 </div>
 
@@ -176,7 +178,7 @@
                                 <div class="modal fade" id="exampleModal-content" tabindex="-1"
                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
-                                        <div class="modal-content">
+                                        <div class="modal-content__services">
                                             <div class="modal-header">
                                                 <h1 class="modal-title fs-5 text-center" id="exampleModalLabel-content">
                                                     <b>IELTS
@@ -276,14 +278,14 @@
                     </div>
                     <div class="col-md-3">
                         <div class="card-modal">
-                            <div class="card-body">
-                                <div class="card-title">
+                            <div class="card-body__services">
+                                <div class="card-title__services">
                                     <h5 class="card-title text-center">Teacher Training Sessions</h5>
                                     <p class="card-text">Консультации для преподавателей по вопросам подготовки к IELTS
                                     </p>
                                 </div>
                                 <div class="text-center p-4">
-                                    <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal"
+                                    <button type="button" class="btn__services btn-danger btn-sm" data-bs-toggle="modal"
                                         data-bs-target="#exampleModal-text">Подробнее</button>
                                 </div>
 
@@ -291,7 +293,7 @@
                                 <div class="modal fade" id="exampleModal-text" tabindex="-1"
                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
-                                        <div class="modal-content">
+                                        <div class="modal-content__services">
                                             <div class="modal-header">
                                                 <h1 class="modal-title fs-5 text-center" id="exampleModalLabel-text">
                                                     <b>Teacher Training
@@ -365,21 +367,21 @@
                     </div>
                     <div class="col-md-3">
                         <div class="card-modal">
-                            <div class="card-body">
-                                <div class="card-title">
+                            <div class="card-body__services">
+                                <div class="card-title__services">
                                     <h5 class="card-title text-center">General English</h5>
                                     <p class="card-text">Индивидуальные занятия по общему английскому
                                     </p>
                                 </div>
                                 <div class="text-center p-4">
-                                    <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal"
+                                    <button type="button" class="btn__services btn-danger btn-sm" data-bs-toggle="modal"
                                         data-bs-target="#exampleModal-modal">Подробнее</button>
                                 </div>
                                 <!-- Modal -->
                                 <div class="modal fade" id="exampleModal-modal" tabindex="-1"
                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
-                                        <div class="modal-content">
+                                        <div class="modal-content__services">
                                             <div class="modal-header">
                                                 <h1 class="modal-title fs-5 text-center" id="exampleModalLabel-modal">
                                                     <b>General
@@ -473,4 +475,4 @@
                                 </div>
                             </div>
                         </div>
-        </section>
+</section>     

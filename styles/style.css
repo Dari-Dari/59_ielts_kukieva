@@ -286,9 +286,12 @@ footer .img-envelope-small {
 
 /*main-banner*/
 /*block-3 services*/
-.main__block-3 .services_card-body {
+.main__block-3 .card-title__services {
+  color: #54566B;
+}
+.main__block-3 .card-body__services {
   width: 300px;
-  height: 222px;
+  height: 235px;
   background-color: #e5f3ff;
   border-radius: 10%;
   color: #54566B;
@@ -296,29 +299,46 @@ footer .img-envelope-small {
   font-size: 16px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
-.main__block-3 .services__card-title {
+.main__block-3 .card-title__services {
   padding: 5px;
   margin: 10px;
-  color: #54566b;
 }
-.main__block-3 .services__btn {
-  box-shadow: 2px 4px 10px rgba(84, 86, 107, 0.3);
+.main__block-3 .btn__services {
+  box-shadow: 1px 1px 1px rgba(224, 179, 128, 0.3);
   border-radius: 5px;
   cursor: pointer;
   margin-top: 5px;
   background-color: #f52222;
+  color: #fff;
+  border: none;
+  padding: 0.5rem;
 }
-.main__block-3 .services__btn:hover {
+.main__block-3 .btn__services:hover {
   background-color: #FCF5EC;
   transition: 0.5s;
   opacity: 0.85;
   color: red;
 }
-.main__block-3 .modal-content {
+.main__block-3 .modal-content__services {
   background-color: beige;
+  max-width: 700px;
+  width: 100%;
+}
+.main__block-3 .services__tittle-top {
+  font-size: 4rem;
+  margin-bottom: 4rem;
+  font-weight: 700;
+  font-family: "Roboto", Arial, sans-serif;
+  color: #54566b;
 }
 
+@media screen and (min-width: 576px) {
+  .services__modal-dialog {
+    max-width: 70vw;
+  }
+}
 /*block-3 services*/
 /*block-4 aboutme*/
 .block-4 {
