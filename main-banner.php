@@ -1,8 +1,7 @@
-<main class="main">
-        <section class="main__block-2 block-2">
+<section class="main__block-2 block-2">
             <div class="container main__container">
                 <div class="card-mb-3">
-                    <div class="row g-4">
+                    <div class="row g-4 main__main-title">
                     <div class="col-8 main__main-text">
                         <div class="card-body main__card-body">
                           <h5 class="card-title main__card-title">IELTS <br> Качественно,<br> профессионально.</h5>
