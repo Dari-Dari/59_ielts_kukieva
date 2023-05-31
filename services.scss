@@ -1,0 +1,68 @@
+@import "./var.scss";
+/*block-3 services*/
+.main__block-3 {
+    
+    .card-title__services {
+        color: #54566B;
+    }
+    .card-body__services {
+        width: 300px;
+        height: 235px;
+        background-color: #e5f3ff;
+        border-radius: 10%; 
+        color: $color-gray;  
+        font-family: $font;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card-title__services {
+        padding:5px;
+        margin: 10px;
+    }
+    .btn__services {
+        box-shadow: 1px 1px 1px rgba(224, 179, 128, 0.3);
+        border-radius: 5px;
+        margin-top: 5px;
+        background-color: #f52222;
+        color: #fff;
+        border: none;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+    
+    .btn__services:hover {
+        background-color:#FCF5EC;
+        transition: 0.5s;
+        opacity: 0.85;
+        color: red; 
+         
+    }
+    
+     .modal-content__services {
+        background-color:beige;
+       
+     }
+
+     .services__modal-header {
+        display: grid;
+        grid-template-columns: 15fr 1fr;
+     }
+
+    
+.services__tittle-top {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+    font-family: $font;
+    color: $color-gray;
+}
+        }
+
+        @media screen and (min-width:576px){
+            .services__modal-dialog {
+                max-width: 70vw;
+            }
+         }
