@@ -2,18 +2,17 @@
 <section class="main__block-3 block-3">
             <div class="container">
                 <div class="card-title fs-1">
-                    <h1>Услуги</h1>
+                    <h5 class="services__tittle-top">Услуги</h5>
                 </div>
-                <div class="row">
-                    <div class="col-md
-                    -3">
+                <div class="row g-2">
+                    <div class="col-md-6 col-sm-6 col-xl-3 my-sm-2 d-flex justify-content-center">
                         <div class="card-modal">
-                            <div class="card-body__services">
+                            <div class="card-body__services p-2">
                                 <div class="card-title__services">
-                                    <h5 class="card-title text-center">Exam Preparation Classes</h5>
+                                    <h5 class="card-title text-center py-3">Exam Preparation Classes</h5>
                                     <p class="card-text">Индивидуальные занятия по подготовке к IELTS</p>
                                 </div>
-                                <div class="text-center p-4">
+                                <div class="text-center py-2">
                                     <button type="button" class="btn__services btn-danger btn-sm" data-bs-toggle="modal"
                                         data-bs-target="#exampleModal">Подробнее</button>
                                 </div>
@@ -21,17 +20,18 @@
                                 <!-- Modal -->
                                 <div class="modal fade" id="exampleModal" tabindex="-1"
                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
+                                    <div class="modal-dialog services__modal-dialog">
                                         <div class="modal-content__services">
-                                            <div class="modal-header">
-                                                <h1 class="modal-title fs-5 text-center" id="exampleModalLabel"><b>Exam
+                                            <div class="modal-header services__modal-header">
+                                                <h1 class="modal-title fs-5 text-center services__modal-dialog-title"
+                                                    id="exampleModalLabel"><b>Exam
                                                         Preparation
                                                         Classes</b><br>Индивидуальные
                                                     занятия по подготовке к IELTS
                                                 </h1>
 
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
+                                                <button type="button" class="btn-close btn services__modal-dialog-btn"
+                                                    data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">
                                                 <p class="text-center">
@@ -46,7 +46,8 @@
                                                                 с
                                                                 выставлением баллов за каждую часть и общего балла за
                                                                 экзамен (оценка по критериям
-                                                                IELTS).</li>
+                                                                IELTS).
+                                                            </li>
                                                             <li class="list-group-flush">2. Разработка <b>индивидуальной
                                                                     стратегии подготовки</b> к
                                                                 IELTS в
@@ -76,7 +77,7 @@
                                                                 критериям
                                                                 и объяснением того, что уже хорошо и что нужно улучшить
                                                                 и как, чтобы получить требуемый
-                                                                балл. </li>
+                                                                балл.</li>
                                                         </ol>
                                                     </p>
                                                     <p class="text-center">
@@ -89,7 +90,7 @@
                                                             английского языка и навыков в
                                                             формате IELTS.</li>
                                                         <li class="list-group-flush">2. Вам нужно <b>быстро вникнуть в
-                                                                формат</b> экзамена  IELTS.
+                                                                формат</b> экзамена IELTS.
                                                         </li>
                                                         <li class="list-group-flush">3. Вам необходимо <b>понять что уже
                                                                 хорошо</b>, а <b>что нужно
@@ -152,7 +153,7 @@
                                                 </p>
                                             </div>
                                             <div class="modal-footer">
-                                                <button type="button" class="btn__services btn-danger btn-sm"
+                                                <button type="button" class="btn btn-danger btn-sm"
                                                     data-bs-dismiss="modal">Закрыть</button>
                                             </div>
                                         </div>
@@ -161,15 +162,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-sm-6 col-xl-3 my-sm-2 d-flex justify-content-center">
                         <div class="card-modal">
-                            <div class="card-body__services">
+                            <div class="card-body__services p-2">
                                 <div class="card-title__services">
-                                    <h5 class="card-title text-center">IELTS Writing</h5>
+                                    <h5 class="card-title text-center py-3">IELTS Writing</h5>
                                     <p class="card-text">Индивидуальные занятия по подготовке к письменной части IELTS
                                     </p>
                                 </div>
-                                <div class="text-center">
+                                <div class="text-center py-2">
                                     <button type="button" class="btn__services btn-danger btn-sm" data-bs-toggle="modal"
                                         data-bs-target="#exampleModal-content">Подробнее</button>
                                 </div>
@@ -177,17 +178,19 @@
                                 <!-- Modal -->
                                 <div class="modal fade" id="exampleModal-content" tabindex="-1"
                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
+                                    <div class="modal-dialog services__modal-dialog">
                                         <div class="modal-content__services">
-                                            <div class="modal-header">
-                                                <h1 class="modal-title fs-5 text-center" id="exampleModalLabel-content">
-                                                    <b>IELTS
-                                                        Writing</b><br>Индивидуальные занятия по подготовке к письменной
-                                                    части IELTS
+                                            <div class="modal-header services__modal-header">
+                                                <h1 class="modal-title fs-5 text-center services__modal-dialog-title"
+                                                    id="exampleModalLabel-content">
+                                                    <p>IELTS
+                                                        Writing</p>
+                                                    <p>Индивидуальные занятия по подготовке к письменной
+                                                        части IELTS</p>
                                                 </h1>
 
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
+                                                <button type="button" class="btn-close btn services__modal-dialog-btn"
+                                                    data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">
                                                 <p class="text-start">
@@ -203,12 +206,14 @@
                                                         <li class="list-group-flush">&#8226;IELTS Academic/General -
                                                             <b>Writing Task 2</b> -
                                                             написание
-                                                            академического эссе (5 видов)</li>
+                                                            академического эссе (5 видов)
+                                                        </li>
                                                     </ul>
                                                 </p>
                                                 <p class="text-center">
                                                     <b>Как проходят индивидуальные занятия по подготовке к письменной
-                                                        части IELTS?</b></p>
+                                                        части IELTS?</b>
+                                                </p>
                                                 <p class="text-start">
                                                     <ul class="list-group list-group-numbered">
                                                         <li class="list-group-flush">1. <b>Определяемся с баллом</b>, на
@@ -276,15 +281,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-sm-6 col-xl-3 my-sm-2 d-flex justify-content-center">
                         <div class="card-modal">
-                            <div class="card-body__services">
+                            <div class="card-body__services p-2">
                                 <div class="card-title__services">
-                                    <h5 class="card-title text-center">Teacher Training Sessions</h5>
+                                    <h5 class="card-title text-center py-3">Teacher Training Sessions</h5>
                                     <p class="card-text">Консультации для преподавателей по вопросам подготовки к IELTS
                                     </p>
                                 </div>
-                                <div class="text-center p-4">
+                                <div class="text-center p-2">
                                     <button type="button" class="btn__services btn-danger btn-sm" data-bs-toggle="modal"
                                         data-bs-target="#exampleModal-text">Подробнее</button>
                                 </div>
@@ -292,18 +297,20 @@
                                 <!-- Modal -->
                                 <div class="modal fade" id="exampleModal-text" tabindex="-1"
                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
+                                    <div class="modal-dialog services__modal-dialog">
                                         <div class="modal-content__services">
-                                            <div class="modal-header">
-                                                <h1 class="modal-title fs-5 text-center" id="exampleModalLabel-text">
-                                                    <b>Teacher Training
-                                                        Sessions</b><br>
-                                                    Консультации для преподавателей по вопросам подготовки к IELTS
+                                            <div class="modal-header services__modal-header">
+                                                <h1 class="modal-title fs-5 text-center services__modal-dialog-title"
+                                                    id="exampleModalLabel-text">
+                                                    <p>Teacher Training
+                                                        Sessions</p>
+                                                    <p>Консультации для преподавателей по вопросам подготовки к IELTS
+                                                    </p>
                                                 </h1>
 
 
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
+                                                <button type="button" class="btn-close btn services__modal-dialog-btn"
+                                                    data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">
                                                 <p class="text-start">
@@ -344,7 +351,8 @@
                                                         круг
                                                         тем,
                                                         которые Вас интересуют в рамках
-                                                        IELTS и я индивидуально под запрос готовлю консультацию - все
+                                                        IELTS и я индивидуально под запрос готовлю консультацию -
+                                                        все
                                                         материалы и запись самой
                                                         консультации у Вас сохраняются после встречи.</li>
                                                     </ul>
@@ -365,30 +373,32 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-sm-6 col-xl-3 my-sm-2 d-flex justify-content-center">
                         <div class="card-modal">
-                            <div class="card-body__services">
+                            <div class="card-body__services p-2">
                                 <div class="card-title__services">
-                                    <h5 class="card-title text-center">General English</h5>
+                                    <h5 class="card-title text-center py-3">General English</h5>
                                     <p class="card-text">Индивидуальные занятия по общему английскому
                                     </p>
                                 </div>
-                                <div class="text-center p-4">
+                                <div class="text-center p-2">
                                     <button type="button" class="btn__services btn-danger btn-sm" data-bs-toggle="modal"
                                         data-bs-target="#exampleModal-modal">Подробнее</button>
                                 </div>
                                 <!-- Modal -->
                                 <div class="modal fade" id="exampleModal-modal" tabindex="-1"
                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
+                                    <div class="modal-dialog services__modal-dialog">
                                         <div class="modal-content__services">
-                                            <div class="modal-header">
-                                                <h1 class="modal-title fs-5 text-center" id="exampleModalLabel-modal">
-                                                    <b>General
-                                                        English</b><br>Индивидуальные занятия по общему английскому
+                                            <div class="modal-header services__modal-header">
+                                                <h1 class="modal-title fs-5 text-center services__modal-dialog-title"
+                                                    id="exampleModalLabel-modal">
+                                                    <p>General
+                                                        English</p>
+                                                    <p>Индивидуальные занятия по общему английскому</p>
                                                 </h1>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
+                                                <button type="button" class="btn-close btn services__modal-dialog-btn"
+                                                    data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">
                                                 <p class="text-start">
@@ -403,7 +413,8 @@
                                                             <b>и поняли, что
                                                                 без наставника никак</b>. Вы
                                                             <b>хотите</b> вывести пассивные знания в актив -
-                                                            <b>говорить!</b></li>
+                                                            <b>говорить!</b>
+                                                        </li>
                                                         <li class="list-group-flush">2. Вы учили английский в школе или
                                                             институте, давно им не
                                                             пользовались, <b>хотите разговориться</b>.</li>
@@ -423,15 +434,18 @@
                                                             балл.</li>
                                                 </p>
                                                 <p class="text-start">
-                                                    General English Индивидуальные занятия по общему английскому. <b>Как
+                                                    General English Индивидуальные занятия по общему английскому.
+                                                    <b>Как
                                                         организован
                                                         процесс?</b>
                                                 </p>
                                                 <p class="text-start">
-                                                    <li class="list-group-flush">1. Встречи проходят <b>регулярно</b>, в
+                                                    <li class="list-group-flush">1. Встречи проходят
+                                                        <b>регулярно</b>, в
                                                         zoom - у Вас есть
                                                         <b>cтабильное
-                                                            расписание</b>.</li>
+                                                            расписание</b>.
+                                                    </li>
                                                     <li class="list-group-flush">2. Всю <b>работу организуем в гугл
                                                             документе</b> - у Вас есть
                                                         постоянный
@@ -449,7 +463,8 @@
                                                         анализ
                                                         Ваших
                                                         потребностей (Needs analysis).
-                                                        Needs analysis - это <b>беседа на английском языке</b>, во время
+                                                        Needs analysis - это <b>беседа на английском языке</b>, во
+                                                        время
                                                         которой я спрашиваю про
                                                         Ваш
                                                         предыдущий
@@ -457,7 +472,8 @@
                                                         <b>определяю Ваш текущий
                                                             уровень</b>
                                                         английского языка и мы <b>обговариваем</b> основные
-                                                        <b>направления работы</b>.</li>
+                                                        <b>направления работы</b>.
+                                                    </li>
                                                     </ul>
                                                 </p>
                                                 <p class="text-start">
@@ -475,4 +491,4 @@
                                 </div>
                             </div>
                         </div>
-      
+        </section>
