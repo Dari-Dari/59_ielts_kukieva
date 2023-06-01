@@ -1,6 +1,7 @@
 @import './_var.scss';
 
-body {
+body,
+html {
     min-width: 375px;
 }
 
@@ -227,12 +228,16 @@ $font-size: 24px;
     margin-bottom: 150px;
 }
 
+.card-img-right-small {
+    display: block;
+    margin: 0 auto;
+}
+
 .card-img-right {
     position: relative;
-    right: 350px;
-    bottom: 3rem;
+    right: 300px;
     z-index: 1;
-    width: 60rem;
+    width: 700px;
 
     @media (max-width:575px) {
         position: relative;
