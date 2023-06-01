@@ -1,0 +1,19 @@
+$color-blue: #e5f3ff;
+$color-gray: #54566b;
+$color-biege: #fcf5ec;
+$color-red: #f52222;
+$color-pink: #f2c8be;
+
+$font: 'Roboto', Arial, sans-serif;
+
+
+@mixin red-button($height, $width, $font-size) {
+    width: $width;
+    height: $height;
+    font-size: $font-size;
+    background-color: $color-red;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    filter: drop-shadow(2px 4px 10px rgba(84, 86, 107, 0.3));
+}
