@@ -33,7 +33,7 @@ header .button__header a {
   text-decoration: none;
   color: #fff;
 }
-header .button__header :hover {
+header .button__header:hover {
   opacity: 0.85;
   transition: 0.5s;
 }
@@ -46,6 +46,41 @@ header .button__header .button__header-red {
   border: none;
   border-radius: 10px;
   filter: drop-shadow(2px 4px 10px rgba(84, 86, 107, 0.3));
+}
+
+.header__offcanvas {
+  background-color: #e5f3ff;
+}
+
+.header__button-menu {
+  border: none;
+}
+.header__button-menu:focus {
+  text-decoration: none;
+  border: 1px;
+  box-shadow: none;
+}
+.header__button-menu:hover {
+  transition: 0.5s;
+  background-color: #fcf5ec;
+}
+
+.header__offcanvas-body {
+  height: 350px;
+}
+
+@media screen and (max-width: 576px) {
+  .header__navbar-small img {
+    max-width: 80px;
+  }
+}
+.header__navbar-small .header__offcanvas-height {
+  height: 60vh;
+}
+@media screen and (min-width: 390px) {
+  .header__navbar-small .header__offcanvas-height {
+    height: 45vh;
+  }
 }
 
 /*header*/
@@ -233,6 +268,7 @@ footer .img-envelope-small {
   color: #fff;
   border: none;
   padding: 0.5rem;
+  cursor: pointer;
 }
 .main__block-3 .btn__services:hover {
   background-color: #FCF5EC;
@@ -245,7 +281,7 @@ footer .img-envelope-small {
 }
 .main__block-3 .services__modal-header {
   display: grid;
-  grid-template-columns: 15fr 1fr;
+  grid-template-columns: 18fr 1fr;
 }
 .main__block-3 .services__tittle-top {
   font-size: 4rem;
@@ -266,7 +302,7 @@ footer .img-envelope-small {
   position: relative;
   font-family: "Roboto", Arial, sans-serif;
   color: #54566b;
-  margin: 6rem auto 6rem auto;
+  margin: 6rem auto 3rem auto;
 }
 .block-4 .title-block-4 {
   font-weight: 700;
@@ -508,6 +544,15 @@ footer .img-envelope-small {
   width: 70%;
   font-size: 70%;
   font-weight: 400;
+}
+
+.reviews__block {
+  height: 39rem;
+}
+@media screen and (max-width: 576px) {
+  .reviews__block {
+    height: 42rem;
+  }
 }
 
 /*block-6 reviews*//*# sourceMappingURL=style.css.map */

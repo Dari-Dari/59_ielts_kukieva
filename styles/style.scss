@@ -6,6 +6,8 @@ header {
     font-size: 1.2rem;
     font-family: $font;
 
+    
+
     .header-logo {
         margin-left: 5.625%;
 
@@ -47,7 +49,7 @@ header {
             color: #fff;
         }
 
-        :hover {
+        &:hover {
             opacity: 0.85;
             transition: 0.5s;
         }
@@ -57,6 +59,47 @@ header {
         }
     }
 }
+
+.header__offcanvas {
+    background-color: $color-blue;
+}
+
+    .header__button-menu {
+        border: none;
+
+        &:focus {
+            text-decoration: none;
+            border: 1px;
+            box-shadow: none;
+        }
+
+        &:hover {
+            transition: 0.5s;
+            background-color: $color-biege;
+        }
+      
+    }
+
+    .header__offcanvas-body {
+        height: 350px;
+    }
+
+    .header__navbar-small {
+        @media screen and (max-width:576px) {
+            img {
+                max-width: 80px;
+            }
+        }
+
+        .header__offcanvas-height {
+            height: 60vh;
+            
+
+            @media screen and (min-width:390px) {
+                height: 45vh;
+            }
+        }
+    }
 
 /*header*/
 
@@ -114,13 +157,17 @@ footer {
 /*footer*/
 
 /*main-banner*/
-$height:73px;
-$width:261px;
-$font-size:24px;
- .btn-main:hover{opacity: 0.5;}
+$height: 73px;
+$width: 261px;
+$font-size: 24px;
+
+.btn-main:hover {
+    opacity: 0.5;
+}
+
 @mixin main($height, $width, $font-size) {
-  text-decoration: none;
-  padding: 1rem 1.5rem;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
     width: $width;
     height: $height;
     font-size: $font-size;
@@ -130,18 +177,20 @@ $font-size:24px;
     z-index: 5;
     border-radius: 10px;
     filter: drop-shadow(2px 4px 10px rgba(84, 86, 107, 0.3));
-    @media (max-width:576px){
-        height:3rem;
-        width:8.25rem;
-        font-size:0.7rem;
+
+    @media (max-width:576px) {
+        height: 3rem;
+        width: 8.25rem;
+        font-size: 0.7rem;
         width: max-content;
     }
-    @media ( min-width:576px) and (max-width: 768px){
-        height:5rem;
-        width:7rem;
-        font-size:1.5rem;
+
+    @media (min-width:576px) and (max-width: 768px) {
+        height: 5rem;
+        width: 7rem;
+        font-size: 1.5rem;
         width: max-content;
-      }
+    }
 }
 
 @media screen and (max-width:576px) {
@@ -149,65 +198,72 @@ $font-size:24px;
         background-image: url(/assets/images/main-banner-mobile.png);
         border-color: $color-blue;
         background-size: cover;
-    background-position: center center;
-    padding: 3rem 0;
-    font-size: 1rem;
+        background-position: center center;
+        padding: 3rem 0;
+        font-size: 1rem;
     }
 }
 
-.btn-main{
-    @include main($height, $width, $font-size,)
-  
-}
-@media screen and (min-width:577px) {
-.block-2{
-    background-image: url(/assets/images/main-banner.png);
-    background-color: $color-blue; 
-    margin-bottom: 5rem;
-    padding: 15rem 0 20rem;
-    background-size: cover;
-    background-position: center center;
-}
+.btn-main {
+    @include main($height, $width, $font-size, )
 }
 
-.main__main-text{
-    color:$color-gray;
+@media screen and (min-width:577px) {
+    .block-2 {
+        background-image: url(/assets/images/main-banner.png);
+        background-color: $color-blue;
+        margin-bottom: 5rem;
+        padding: 15rem 0 20rem;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+.main__main-text {
+    color: $color-gray;
     max-height: 886px;
     display: grid;
-    align-items:center;
+    align-items: center;
 
-   }
-.main__card-title{
+}
+
+.main__card-title {
     font-size: 3.21rem;
-    @media (max-width:576px){
+
+    @media (max-width:576px) {
         z-index: 6;
         font-size: 1rem;
-      }
-      @media ( min-width:576px) and (max-width: 768px){
+    }
+
+    @media (min-width:576px) and (max-width: 768px) {
         z-index: 6;
         font-size: 2rem;
-      }
-      @media (min-width:769px) and (max-width:1199px){
+    }
+
+    @media (min-width:769px) and (max-width:1199px) {
         z-index: 6;
         font-size: 2.5rem;
-      }
+    }
 }
-.main__card-text{
+
+.main__card-text {
     font-size: 1.5rem;
     padding-top: 1rem;
-    
-    @media (max-width:576px){
-      z-index: 6;
-      font-size: 1rem;
+
+    @media (max-width:576px) {
+        z-index: 6;
+        font-size: 1rem;
     }
-    @media ( min-width:576px) and (max-width: 768px){
+
+    @media (min-width:576px) and (max-width: 768px) {
         z-index: 6;
         font-size: 1.5rem;
-      }
-      @media (min-width:769px) and (max-width:1199px){
+    }
+
+    @media (min-width:769px) and (max-width:1199px) {
         z-index: 6;
         font-size: 2rem;
-      }
+    }
 }
 
 
@@ -215,16 +271,17 @@ $font-size:24px;
 
 /*block-3 services*/
 .main__block-3 {
-    
+
     .card-title__services {
         color: #54566B;
     }
+
     .card-body__services {
         width: 300px;
         height: 235px;
         background-color: #e5f3ff;
-        border-radius: 10%; 
-        color: $color-gray;  
+        border-radius: 10%;
+        color: $color-gray;
         font-family: $font;
         font-size: 1rem;
         display: flex;
@@ -233,9 +290,10 @@ $font-size:24px;
     }
 
     .card-title__services {
-        padding:5px;
+        padding: 5px;
         margin: 10px;
     }
+
     .btn__services {
         box-shadow: 1px 1px 1px rgba(224, 179, 128, 0.3);
         border-radius: 5px;
@@ -244,40 +302,42 @@ $font-size:24px;
         color: #fff;
         border: none;
         padding: 0.5rem;
+        cursor: pointer;
     }
-    
+
     .btn__services:hover {
-        background-color:#FCF5EC;
+        background-color: #FCF5EC;
         transition: 0.5s;
         opacity: 0.85;
-        color: red; 
-         
+        color: red;
+
     }
-     .modal-content__services {
-        background-color:beige;
-       
-     }
 
-     .services__modal-header {
+    .modal-content__services {
+        background-color: beige;
+
+    }
+
+    .services__modal-header {
         display: grid;
-        grid-template-columns: 15fr 1fr;
-     }
+        grid-template-columns: 18fr 1fr;
+    }
 
-    
-.services__tittle-top {
-    font-size: 4rem;
-    margin-bottom: 4rem;
-    font-weight: 700;
-    font-family: $font;
-    color: $color-gray;
+
+    .services__tittle-top {
+        font-size: 4rem;
+        margin-bottom: 4rem;
+        font-weight: 700;
+        font-family: $font;
+        color: $color-gray;
+    }
 }
-        }
 
-        @media screen and (min-width:576px){
-            .services__modal-dialog {
-                max-width: 70vw;
-            }
-         }
+@media screen and (min-width:576px) {
+    .services__modal-dialog {
+        max-width: 70vw;
+    }
+}
 
 /*block-3 services*/
 
@@ -286,7 +346,7 @@ $font-size:24px;
     position: relative;
     font-family: $font;
     color: $color-gray;
-    margin: 6rem auto 6rem auto;
+    margin: 6rem auto 3rem auto;
 
     .title-block-4 {
         font-weight: 700;
@@ -444,12 +504,12 @@ $font-size:24px;
     }
 
     @media screen and (min-width: 991px) and (max-width: 1399px) {
-        
-        .block-5_card-body {
-        height: 40rem;
 
+        .block-5_card-body {
+            height: 40rem;
+
+        }
     }
-}
 }
 
 .block-5__card {
@@ -558,6 +618,13 @@ $font-size:24px;
     width: 70%;
     font-size: 70%;
     font-weight: 400;
+}
+.reviews__block {
+    height: 39rem;
+
+    @media screen and (max-width:576px) {
+        height: 42rem;
+    }
 }
 
 /*block-6 reviews*/
