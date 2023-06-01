@@ -27,8 +27,14 @@
     height: 6vh;
     top: 50%;
     background-color:$color-pink;
-    opacity: 0.85;
     border-radius: 25%;
+  }
+
+  .carousel-control-prev:hover {
+        opacity: 0.5;
+  }
+  .carousel-control-next:hover {
+    opacity: 0.5;
   }
 
 
@@ -48,3 +54,4 @@
     font-size: 0.7rem;
     font-weight: 400;
   }
+  
