@@ -32,11 +32,12 @@
                       alt="icon arrow circle right">
                       <p class="list-group-item__elements" id="third_item">CPE (C2 English Language Proficiency)</p>
                   </li>
-                  <li class="list-group-item__second d-flex align-items-center border-0">
+                  <li class="list-group-item__second d-flex align-items-center border-0" id="list-group-item__fourth-element">
                     <img src="assets/icons/icon _arrow circle right_.svg" class="bi bi-arrow-right-circle"
                       alt="icon arrow circle right">
                       <p class="list-group-item__elements" id="fourth_item">10 лет преподаю английский язык, из них 9 лет готовлю студентов к IELTS:</p>
                   </li>
+                </ul>
                 <ul class="list-group__aboutme">
                   <li class="list-group-item__second d-flex align-items-center border-0">
                   <img src="assets/icons/dot.svg" alt="dot" class="dot__icon">
@@ -58,7 +59,6 @@
                   <img src="assets/icons/dot.svg" alt="dot" class="dot__icon">
                   <p class="list-group-item__elements" id="ninth_item">Консультирую преподавателей по вопросам подготовки к IELTS</p>
                   </li>
-                </ul>
                 </ul>
               </div>
               <img src="assets/images/ellipse_block4_down.svg" alt="circle" class="circle_b4_down">

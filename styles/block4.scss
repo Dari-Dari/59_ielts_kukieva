@@ -63,64 +63,67 @@
             padding-left: 0;
             margin-bottom: 0;
 
-            .list-group-item,
-            .list-group-item__second {
-                padding: 0;
+            .list-group-item {
+                padding: 0 0 1.4rem 0;
                 font-weight: 400;
                 font-size: 1.125rem;
                 line-height: 1.3rem;
                 color: $color-gray;
-            }
-
-            .list-group-item {
-                padding-bottom: 1.4rem;
 
                 .bi-arrow-right-circle {
                     margin-right: 1.375rem;
                 }
+
+                .list-group-item__elements {
+                    margin: 0;
+                }
+
+                #second_item {
+                    max-width: 23.9375rem;
+                }
+
+                #fourth_item {
+                    max-width: 29.9375rem;
+                }
+            }
+
+            #list-group-item__fourth-element {
+                padding: 0 0 1rem 0;
+            }
+        }
+
+        .list-group__aboutme {
+            padding-left: 3.58rem;
+
+            @media screen and (max-width:991px) {
+                padding-left: 2.5rem;
             }
 
             .list-group-item__second {
-                padding-bottom: 1rem;
-
-                .bi-arrow-right-circle {
-                    margin-right: 1.375rem;
-                }
+                padding: 0 0 1rem 0;
+                font-weight: 400;
+                font-size: 1.125rem;
+                line-height: 1.3rem;
+                color: $color-gray;
 
                 .dot__icon {
                     margin-right: 0.625rem;
                 }
-            }
 
-            #second_item {
-                max-width: 23.9375rem;
-            }
+                #sixth_item {
+                    max-width: 30.4rem;
+                }
 
-            #fourth_item {
-                max-width: 29.9375rem;
-            }
+                #eighth_item {
+                    max-width: 29.375rem;
+                }
 
-            #sixth_item {
-                max-width: 30.4rem;
-            }
+                #ninth_item {
+                    max-width: 30.7rem;
+                }
 
-            #eighth_item {
-                max-width: 29.375rem;
-            }
-
-            #ninth_item {
-                max-width: 30.7rem;
-            }
-
-            .list-group-item__elements {
-                margin: 0;
-            }
-
-            .list-group__aboutme {
-                padding-left: 3.58rem;
-
-                @media screen and (max-width:991px) {
-                    padding-left: 2.5rem;
+                .list-group-item__elements {
+                    margin: 0;
                 }
             }
         }
