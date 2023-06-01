@@ -4,13 +4,14 @@ body {
     min-width: 375px;
 }
 
+/*
 html,
 body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
     font-size: 16px;
-}
+}*/
 
 /*header*/
 header {
@@ -671,7 +672,8 @@ $font-size: 24px;
         min-height: 31rem;
 
         .block-5_card-body {
-            height: 40rem;
+            height: 25rem;
+            /*дописать классы*/
             font-size: 1.3rem;
             justify-content: space-between;
         }
@@ -681,9 +683,20 @@ $font-size: 24px;
         }
     }
 
-    @media screen and (min-width: 400px) and (max-width: 767px) {
+    @media screen and (min-width: 576px) and (max-width: 767px) {
         .block-5_card-body {
             height: 40rem;
+            font-size: 0.8rem;
+        }
+
+        .block-5__card_bottom {
+            padding-top: 0.5rem;
+        }
+    }
+
+    @media screen and (max-width: 575px) {
+        .block-5_card-body {
+            height: 27rem;
             font-size: 1rem;
         }
 
@@ -694,7 +707,7 @@ $font-size: 24px;
 
     @media screen and (min-width: 991px) and (max-width: 1399px) {
         .block-5_card-body {
-            height: 40rem;
+            height: 25rem;
         }
 
         .block-5__card_bottom {
@@ -843,7 +856,7 @@ $font-size: 24px;
 @media screen and (max-width:992px) {
 
     .services__tittle-top,
-    .title-block-4,
+    .block-4 .title-block-4,
     .block-5__title,
     .title__block-6 {
         font-size: 2rem;
