@@ -39,9 +39,10 @@ header {
             padding-right: 6%;
             padding-bottom: 0.3rem;
 
+            transition: 0.5s all;
             &:hover {
-                opacity: 0.85;
-                transition: 0.5s all;
+                opacity: 0.5;
+                font-weight: 500;
             }
         }
     }
@@ -50,10 +51,7 @@ header {
 
     .header__link {
         color: $color-gray;
-
     }
-
-
 
     .button__header {
         margin-right: 5.625%;
@@ -226,6 +224,10 @@ $font-size: 24px;
     background-color: $color-blue;
     max-height: 886px;
     margin-bottom: 150px;
+
+    @media (max-width:576px) {
+        margin-bottom: 2rem;
+}
 }
 
 .card-img-right-small {
@@ -302,6 +304,12 @@ $font-size: 24px;
     }
 }
 
+.main__container {
+    @media (max-width:576px) {
+       margin-bottom: 3rem;
+    }
+}
+
 .main__main-text {
     color: $color-gray;
     max-height: 886px;
@@ -312,6 +320,7 @@ $font-size: 24px;
         display: grid;
         align-items: end;
         grid-template-rows: 90% 1fr;
+        padding-top: 20rem;
     }
 
     @media (min-width:576px) and (max-width: 768px) {
@@ -352,7 +361,7 @@ $font-size: 24px;
     @media (max-width:575px) {
         z-index: 6;
         font-size: 1rem;
-        padding: 0;
+        padding: 1rem 0 0 0;
     }
 
     @media (min-width:576px) and (max-width: 768px) {
@@ -369,22 +378,29 @@ $font-size: 24px;
 .main__card-body {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    align-content: end;
     z-index: 8;
+    padding-top: 9rem;
+    padding-bottom: 5rem;
 
-    @media (max-width:575px) {
+    @media (max-width:576px) {
         display: grid;
         grid-template-rows: 1fr;
         justify-content: center;
-        ;
+        align-items: end;
         width: 23rem;
+        padding: 10rem 0 2rem;
+        height: 33rem;
+
+        .btn-main {
+            font-size: 1rem;
+        }
     }
 
-    @media (min-width:576px) and (max-width: 768px) {
+    @media (min-width:577px) and (max-width: 768px) {
         display: grid;
         grid-template-rows: 1fr;
         justify-content: center;
-        ;
+        
 
     }
 
@@ -392,13 +408,44 @@ $font-size: 24px;
         display: grid;
         grid-template-rows: 1fr;
         justify-content: center;
-        ;
+        
     }
 }
 
-.main__main-img {
-    max-height: 886px;
+.main__foto-img {
+    max-width: 600px;
+    width: 100%;
 }
+.main__section {
+    background-color: $color-blue;
+    background-image: url(/assets/images/main-banner.png);
+    background-size: cover;
+    background-position: center center;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+
+    @media screen and (max-width: 768px) {
+        background-image: url(/assets/images/Group47.png);
+        background-color: $color-blue;
+        background-size: cover;
+        background-position: center center;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+
+    }
+
+
+}
+
+
+/*.main__foto {
+    background-image: url(/assets/images/main-banner.png);
+    background-size: cover;
+    z-index: 100;
+}*/
+
 
 
 /*main-banner*/
