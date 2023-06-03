@@ -154,54 +154,60 @@ footer .img-envelope-small {
   padding-left: 0;
   margin-bottom: 0;
 }
-.block-4 .block-4__text-block .list-group__block4 .list-group-item,
-.block-4 .block-4__text-block .list-group__block4 .list-group-item__second {
-  padding: 0;
+.block-4 .block-4__text-block .list-group__block4 .list-group-item {
+  padding: 0 0 1.4rem 0;
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 1.3rem;
   color: #54566b;
 }
-.block-4 .block-4__text-block .list-group__block4 .list-group-item {
-  padding-bottom: 1.4rem;
+.block-4 .block-4__text-block .list-group__block4 .list-group-item .bi-arrow-right-circle {
+  margin-right: 1.375rem;
 }
 .block-4 .block-4__text-block .list-group__block4 .list-group-item .bi-arrow-right-circle {
   margin-right: 1.375rem;
 }
-.block-4 .block-4__text-block .list-group__block4 .list-group-item__second {
-  padding-bottom: 1rem;
-}
-.block-4 .block-4__text-block .list-group__block4 .list-group-item__second .bi-arrow-right-circle {
-  margin-right: 1.375rem;
-}
-.block-4 .block-4__text-block .list-group__block4 .list-group-item__second .dot__icon {
-  margin-right: 0.625rem;
-}
-.block-4 .block-4__text-block .list-group__block4 #second_item {
-  max-width: 23.9375rem;
-}
-.block-4 .block-4__text-block .list-group__block4 #fourth_item {
-  max-width: 29.9375rem;
-}
-.block-4 .block-4__text-block .list-group__block4 #sixth_item {
-  max-width: 30.4rem;
-}
-.block-4 .block-4__text-block .list-group__block4 #eighth_item {
-  max-width: 29.375rem;
-}
-.block-4 .block-4__text-block .list-group__block4 #ninth_item {
-  max-width: 30.7rem;
-}
-.block-4 .block-4__text-block .list-group__block4 .list-group-item__elements {
+.block-4 .block-4__text-block .list-group__block4 .list-group-item .list-group-item__elements {
   margin: 0;
 }
-.block-4 .block-4__text-block .list-group__block4 .list-group__aboutme {
+.block-4 .block-4__text-block .list-group__block4 .list-group-item #second_item {
+  max-width: 23.9375rem;
+}
+.block-4 .block-4__text-block .list-group__block4 .list-group-item #fourth_item {
+  max-width: 29.9375rem;
+}
+.block-4 .block-4__text-block .list-group__block4 #list-group-item__fourth-element {
+  padding: 0 0 1rem 0;
+}
+.block-4 .block-4__text-block .list-group__aboutme {
   padding-left: 3.58rem;
 }
 @media screen and (max-width: 991px) {
-  .block-4 .block-4__text-block .list-group__block4 .list-group__aboutme {
+  .block-4 .block-4__text-block .list-group__aboutme {
     padding-left: 2.5rem;
   }
+}
+.block-4 .block-4__text-block .list-group__aboutme .list-group-item__second {
+  padding: 0 0 1rem 0;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.3rem;
+  color: #54566b;
+}
+.block-4 .block-4__text-block .list-group__aboutme .list-group-item__second .dot__icon {
+  margin-right: 0.625rem;
+}
+.block-4 .block-4__text-block .list-group__aboutme .list-group-item__second #sixth_item {
+  max-width: 30.4rem;
+}
+.block-4 .block-4__text-block .list-group__aboutme .list-group-item__second #eighth_item {
+  max-width: 29.375rem;
+}
+.block-4 .block-4__text-block .list-group__aboutme .list-group-item__second #ninth_item {
+  max-width: 30.7rem;
+}
+.block-4 .block-4__text-block .list-group__aboutme .list-group-item__second .list-group-item__elements {
+  margin: 0;
 }
 .block-4 .block-4__text-block .circle_b4_down {
   position: absolute;
