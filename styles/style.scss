@@ -24,6 +24,7 @@
     @media screen and (max-width: 399px) {
         padding-bottom: 1rem;
 
+
         .block-5_card-body {
             justify-content: space-between;
         }
@@ -34,11 +35,10 @@
     }
 
     @media screen and (min-width: 768px) and (max-width: 990px) {
-        border: 3px solid white;
-        min-height: 31rem;
+        ///min-height: 31rem;
 
         .block-5_card-body {
-            height: 40rem;
+            height: 31rem;
             font-size: 1.3rem;
             justify-content: space-between;
         }
