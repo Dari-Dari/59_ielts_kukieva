@@ -40,6 +40,7 @@ header {
             padding-bottom: 0.3rem;
 
             transition: 0.5s all;
+
             &:hover {
                 opacity: 0.5;
                 font-weight: 500;
@@ -227,7 +228,7 @@ $font-size: 24px;
 
     @media (max-width:576px) {
         margin-bottom: 2rem;
-}
+    }
 }
 
 .card-img-right-small {
@@ -306,7 +307,7 @@ $font-size: 24px;
 
 .main__container {
     @media (max-width:576px) {
-       margin-bottom: 3rem;
+        margin-bottom: 3rem;
     }
 }
 
@@ -400,7 +401,7 @@ $font-size: 24px;
         display: grid;
         grid-template-rows: 1fr;
         justify-content: center;
-        
+
 
     }
 
@@ -408,7 +409,7 @@ $font-size: 24px;
         display: grid;
         grid-template-rows: 1fr;
         justify-content: center;
-        
+
     }
 }
 
@@ -416,6 +417,7 @@ $font-size: 24px;
     max-width: 600px;
     width: 100%;
 }
+
 .main__section {
     background-color: $color-blue;
     background-image: url(/assets/images/main-banner.png);
@@ -430,9 +432,9 @@ $font-size: 24px;
         background-color: $color-blue;
         background-size: cover;
         background-position: center center;
-    z-index: 100;
-    margin: 0;
-    padding: 0;
+        z-index: 100;
+        margin: 0;
+        padding: 0;
 
     }
 
@@ -566,6 +568,21 @@ $font-size: 24px;
             bottom: 35rem;
             z-index: -1;
 
+            @media screen and (min-width:1695px) {
+                right: 13.5rem;
+                bottom: 35rem;
+            }
+
+            @media screen and (min-width:1200px) and (max-width:1694px) {
+                right: 12rem;
+                bottom: 35rem;
+            }
+
+            @media screen and (min-width:992px) and (max-width:1199px) {
+                right: 5.5rem;
+                bottom: 35rem;
+            }
+
             @media screen and (max-width:991px) {
                 display: none;
             }
@@ -674,6 +691,21 @@ $font-size: 24px;
             position: absolute;
             top: 14rem;
             left: 10rem;
+
+            @media screen and (min-width:1695px) {
+                top: 14rem;
+                left: 10rem;
+            }
+
+            @media screen and (min-width:1200px) and (max-width:1694px) {
+                top: 14rem;
+                left: -5.3rem;
+            }
+
+            @media screen and (min-width:992px) and (max-width:1199px) {
+                top: 14rem;
+                left: -11.8rem;
+            }
 
             @media screen and (max-width:991px) {
                 display: none;
