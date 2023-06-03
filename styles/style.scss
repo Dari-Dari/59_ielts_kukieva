@@ -40,6 +40,7 @@ header {
             padding-bottom: 0.3rem;
 
             transition: 0.5s all;
+
             &:hover {
                 opacity: 0.5;
                 font-weight: 500;
@@ -227,7 +228,7 @@ $font-size: 24px;
 
     @media (max-width:576px) {
         margin-bottom: 2rem;
-}
+    }
 }
 
 .card-img-right-small {
@@ -306,7 +307,7 @@ $font-size: 24px;
 
 .main__container {
     @media (max-width:576px) {
-       margin-bottom: 3rem;
+        margin-bottom: 3rem;
     }
 }
 
@@ -396,26 +397,40 @@ $font-size: 24px;
         }
     }
 
-    @media (min-width:577px) and (max-width: 768px) {
+    @media (min-width:577px) and (max-width: 767px) {
         display: grid;
         grid-template-rows: 1fr;
         justify-content: center;
-        
+
 
     }
 
-    @media (min-width:769px) and (max-width:1199px) {
+    @media (min-width:769px) and (max-width:1150px) {
         display: grid;
         grid-template-rows: 1fr;
         justify-content: center;
-        
+
     }
 }
+
+.main__text .main__card-body {
+
+    @media screen and (min-width: 1151px) and (max-width: 2550px) {
+
+        padding: 13rem 0 8rem;
+    }
+
+    @media screen and (min-width: 500px) and (max-width:768px) {
+        padding: 20rem 0 15rem;
+    }
+}
+
 
 .main__foto-img {
     max-width: 600px;
     width: 100%;
 }
+
 .main__section {
     background-color: $color-blue;
     background-image: url(/assets/images/main-banner.png);
@@ -430,14 +445,21 @@ $font-size: 24px;
         background-color: $color-blue;
         background-size: cover;
         background-position: center center;
-    z-index: 100;
-    margin: 0;
-    padding: 0;
-
+        z-index: 100;
+        margin: 0;
+        padding: 0;
     }
 
 
 }
+
+@media screen and (min-width: 1250px) and (max-width: 2150px) {
+    .main__card-body {
+        padding: 15rem 0 10rem;
+    }
+}
+
+
 
 
 /*.main__foto {
@@ -545,6 +567,10 @@ $font-size: 24px;
     color: $color-gray;
     margin: 6rem auto 6rem auto;
 
+    @media screen and (max-width: 399px) {
+        margin: 2rem auto;
+    }
+
     .title-block-4 {
         font-weight: 700;
         font-size: 4rem;
@@ -574,7 +600,6 @@ $font-size: 24px;
 
     .block-4__text-block {
         padding-left: 4.5rem;
-        position: relative;
 
         @media screen and (max-width:991px) {
             padding-left: 0rem;
@@ -589,102 +614,126 @@ $font-size: 24px;
                 line-height: 2.375rem;
                 color: $color-gray;
                 margin: 0;
-            }
 
-            .card-subtitle__block-4 {
-                font-weight: 500;
-                font-size: 1.5rem;
-                line-height: 1.75rem;
-                color: $color-gray;
-                margin: 0;
-            }
-        }
-
-        .list-group__block4 {
-            max-width: 37.125rem;
-            padding-left: 0;
-            margin-bottom: 0;
-
-            .list-group-item {
-                padding: 0 0 1.4rem 0;
-                font-weight: 400;
-                font-size: 1.125rem;
-                line-height: 1.3rem;
-                color: $color-gray;
-
-                .bi-arrow-right-circle {
-                    margin-right: 1.375rem;
-                }
-
-                .list-group-item__elements {
-                    margin: 0;
-                }
-
-                #second_item {
-                    max-width: 23.9375rem;
-                }
-
-                #fourth_item {
-                    max-width: 29.9375rem;
-                }
-            }
-
-            #list-group-item__fourth-element {
-                padding: 0 0 1rem 0;
-            }
-        }
-
-        .list-group__aboutme {
-            padding-left: 3.58rem;
-
-            @media screen and (max-width:991px) {
-                padding-left: 2.5rem;
-            }
-
-            .list-group-item__second {
-                padding: 0 0 1rem 0;
-                font-weight: 400;
-                font-size: 1.125rem;
-                line-height: 1.3rem;
-                color: $color-gray;
-
-                .dot__icon {
-                    margin-right: 0.625rem;
-                }
-
-                #sixth_item {
-                    max-width: 30.4rem;
-                }
-
-                #eighth_item {
-                    max-width: 29.375rem;
-                }
-
-                #ninth_item {
-                    max-width: 30.7rem;
-                }
-
-                .list-group-item__elements {
-                    margin: 0;
+                @media screen and (max-width:399px) {
+                    font-size: 1.5rem;
                 }
             }
         }
+    }
 
-        .circle_b4_down {
-            position: absolute;
-            top: 14rem;
-            left: 10rem;
+    .card-subtitle__block-4 {
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+        color: $color-gray;
+        margin: 0;
 
-            @media screen and (max-width:991px) {
-                display: none;
-            }
+        @media screen and (max-width:399px) {
+            font-size: 1.3rem;
         }
+    }
+}
+
+
+
+
+.list-group__block4 {
+    max-width: 37.125rem;
+    padding-left: 0;
+    margin-bottom: 0;
+
+    .list-group-item {
+        padding: 0 0 1.4rem 0;
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 1.3rem;
+        color: $color-gray;
+
+        .bi-arrow-right-circle {
+            margin-right: 1.375rem;
+        }
+
+        .list-group-item__elements {
+            margin: 0;
+        }
+
+        #second_item {
+            max-width: 23.9375rem;
+        }
+
+        #fourth_item {
+            max-width: 29.9375rem;
+        }
+    }
+
+    #list-group-item__fourth-element {
+        padding: 0 0 1rem 0;
+    }
+}
+
+.list-group__aboutme {
+    padding-left: 3.58rem;
+
+    @media screen and (max-width:991px) {
+        padding-left: 2.5rem;
+    }
+
+    .list-group-item__second {
+        padding: 0 0 1rem 0;
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 1.3rem;
+        color: $color-gray;
+
+        .dot__icon {
+            margin-right: 0.625rem;
+        }
+
+        #sixth_item {
+            max-width: 30.4rem;
+        }
+
+        #eighth_item {
+            max-width: 29.375rem;
+        }
+
+        #ninth_item {
+            max-width: 30.7rem;
+        }
+
+        .list-group-item__elements {
+            margin: 0;
+        }
+    }
+}
+
+
+
+.aboutme__ellipse-down {
+    position: relative;
+}
+
+.circle_b4_down {
+    position: absolute;
+    top: 20rem;
+    right: 1rem;
+    z-index: -100;
+
+    @media screen and (max-width:991px) {
+        display: none;
+    }
+
+    @media screen and (max-width:1400px) {
+        max-width: 500px;
+        right: 2rem;
     }
 }
 
 /*block-4 aboutme*/
 
 /*block-5 price*/
+
 .main__block-5 {
     font-family: $font;
     color: $color-gray;
@@ -705,14 +754,12 @@ $font-size: 24px;
     justify-content: space-between;
 }
 
-
 .block-5__card-col {
     @media screen and (max-width: 399px) {
         padding-bottom: 1rem;
 
-
         .block-5_card-body {
-            justify-content: space-between;
+            height: 29rem;
         }
 
         .block-5__card_bottom {
@@ -721,24 +768,14 @@ $font-size: 24px;
     }
 
     @media screen and (min-width: 768px) and (max-width: 990px) {
-        min-height: 31rem;
 
         .block-5_card-body {
-            height: 25rem;
-            /*дописать классы*/
-            font-size: 1.3rem;
+            height: 31rem;
             justify-content: space-between;
         }
 
-        .block-5__card_bottom {
-            padding-top: 0.5rem;
-        }
-    }
-
-    @media screen and (min-width: 576px) and (max-width: 767px) {
-        .block-5_card-body {
-            height: 40rem;
-            font-size: 0.8rem;
+        .block-5__list-group {
+            font-size: 1.1rem;
         }
 
         .block-5__card_bottom {
@@ -746,24 +783,31 @@ $font-size: 24px;
         }
     }
 
-    @media screen and (max-width: 575px) {
+    @media screen and (min-width: 400px) and (max-width: 767px) {
         .block-5_card-body {
-            height: 27rem;
-            font-size: 1rem;
+            height: 28rem;
         }
 
         .block-5__card_bottom {
             padding-top: 0.5rem;
+        }
+
+        .block-5__list-group {
+            font-size: 1.2rem;
         }
     }
 
     @media screen and (min-width: 991px) and (max-width: 1399px) {
         .block-5_card-body {
-            height: 25rem;
+            height: 31rem;
         }
 
         .block-5__card_bottom {
             padding-top: 0.5rem;
+        }
+
+        .block-5__list-group {
+            font-size: 1.2rem;
         }
     }
 }
@@ -821,7 +865,6 @@ $font-size: 24px;
         background-color: $color-biege;
         color: $color-red;
         font-weight: 500;
-
     }
 }
 
@@ -843,8 +886,14 @@ $font-size: 24px;
     .reviews__ellips-bck {
         position: absolute;
         top: 28rem;
-        left: 52rem;
+        right: 5rem;
         z-index: -1;
+
+        @media screen and (max-width:1400px) {
+            top: 35rem;
+            width: 15rem;
+            right: 10rem;
+        }
     }
 }
 
