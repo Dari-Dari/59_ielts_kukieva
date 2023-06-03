@@ -1,0 +1,136 @@
+@import './_var.scss';
+
+/*block-5 price*/
+.main__block-5 {
+    font-family: $font;
+    color: $color-gray;
+    overflow: hidden;
+}
+
+.block-5__title {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 4.7rem;
+    margin: 0 0 4rem 0;
+}
+
+.block-5_card-body {
+    height: 31.735rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.block-5__card-col {
+    @media screen and (max-width: 399px) {
+        padding-bottom: 1rem;
+
+        .block-5_card-body {
+            height: 25rem;
+        }
+
+        .block-5__card_bottom {
+            padding-top: 0.5rem;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 990px) {
+
+        .block-5_card-body {
+            height: 31rem;
+            justify-content: space-between;
+        }
+
+        .block-5__list-group {
+            font-size: 1.1rem;
+        }
+
+        .block-5__card_bottom {
+            padding-top: 0.5rem;
+        }
+    }
+
+    @media screen and (min-width: 400px) and (max-width: 767px) {
+        .block-5_card-body {
+            height: 28rem;
+        }
+
+        .block-5__card_bottom {
+            padding-top: 0.5rem;
+        }
+
+        .block-5__list-group {
+            font-size: 1.2rem;
+        }
+    }
+
+    @media screen and (min-width: 991px) and (max-width: 1399px) {
+        .block-5_card-body {
+            height: 31rem;
+        }
+
+        .block-5__card_bottom {
+            padding-top: 0.5rem;
+        }
+
+        .block-5__list-group {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.block-5__card {
+    padding: 1.5rem 1.25rem 0 1.25rem;
+    background-color: $color-blue;
+    color: $color-gray;
+}
+
+.block-5__card-title {
+    text-align: left;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5625rem;
+}
+
+.block-5__list-group {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.3125rem;
+}
+
+.block-5__card_time {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1rem;
+}
+
+.block-5__card_price {
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+
+.block-5__card_bottom {
+    padding-top: 2.5rem;
+}
+
+.block-5__card_button {
+    display: flex;
+    justify-content: center;
+}
+
+.block-5__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include red-button (2.5rem, 8rem, 1rem);
+    transition: 0.5s all;
+
+    &:hover {
+        background-color: $color-biege;
+        color: $color-red;
+        font-weight: 500;
+    }
+}
