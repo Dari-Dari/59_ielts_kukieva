@@ -42,7 +42,6 @@ header {
             transition: 0.5s all;
 
             &:hover {
-                opacity: 0.5;
                 font-weight: 500;
             }
         }
@@ -52,6 +51,10 @@ header {
 
     .header__link {
         color: $color-gray;
+
+        &:hover {
+            opacity: 0.5;
+        }
     }
 
     .button__header {
@@ -208,6 +211,7 @@ $font-size: 24px;
 
 .btn-main {
     @include main($height, $width, $font-size, );
+    transition: 0.5s all;
 
     &:hover {
         background-color: $color-biege;
@@ -306,6 +310,16 @@ $font-size: 24px;
 }
 
 .main__container {
+    padding: 3rem 0;
+
+    @media (min-width:2300px) {
+        padding: 10rem 0;
+    }
+
+    @media (max-width:399px) {
+        padding: 0;
+    }
+
     @media (max-width:576px) {
         margin-bottom: 3rem;
     }
@@ -326,8 +340,15 @@ $font-size: 24px;
 
     @media (min-width:576px) and (max-width: 768px) {
         display: grid;
-        justify-content: start;
+        align-items: end;
+        grid-template-rows: 90% 1fr;
+        padding-top: 20rem;
     }
+
+    /* @media (min-width:576px) and (max-width: 768px) {
+        display: grid;
+        justify-content: start;
+    }*/
 
     @media (min-width:769px) and (max-width:1199px) {
         display: grid;
@@ -383,24 +404,40 @@ $font-size: 24px;
     padding-top: 9rem;
     padding-bottom: 5rem;
 
-    @media (max-width:576px) {
+    @media (max-width:575px) {
         display: grid;
         grid-template-rows: 1fr;
         justify-content: center;
         align-items: end;
         width: 23rem;
         padding: 10rem 0 2rem;
-        height: 33rem;
+        height: 40rem;
 
         .btn-main {
             font-size: 1rem;
         }
     }
 
-    @media (min-width:577px) and (max-width: 767px) {
+    @media (max-width:399px) {
         display: grid;
         grid-template-rows: 1fr;
         justify-content: center;
+        align-items: end;
+        width: 23rem;
+        padding: 8rem 0 2rem;
+        height: 37.5rem;
+
+    }
+
+
+
+    @media (min-width:576px) and (max-width: 768px) {
+        display: grid;
+        grid-template-rows: 1fr;
+        justify-content: center;
+        align-items: end;
+        padding: 18rem 0 8rem;
+        height: 45rem;
 
 
     }
@@ -420,9 +457,7 @@ $font-size: 24px;
         padding: 13rem 0 8rem;
     }
 
-    @media screen and (min-width: 500px) and (max-width:768px) {
-        padding: 20rem 0 15rem;
-    }
+
 }
 
 
@@ -483,6 +518,11 @@ $font-size: 24px;
             top: -5rem;
             right: -2.5rem;
             z-index: -1;
+
+            /*  @media screen and (min-width:992px) and (max-width:1199px) {
+                top: -5rem;
+                right: 0;
+            }*/
         }
     }
 
@@ -565,7 +605,7 @@ $font-size: 24px;
 .block-4 {
     font-family: $font;
     color: $color-gray;
-    margin: 6rem auto 6rem auto;
+    margin: 0 auto;
 
     @media screen and (max-width: 399px) {
         margin: 2rem auto;
@@ -580,10 +620,14 @@ $font-size: 24px;
 
     .block-4__image-block {
         position: relative;
+        margin: 0 auto;
 
         .block4__img {
-            max-width: 100%;
-            max-height: 100%;
+            @media screen and (min-width: 992px) and (max-width: 1399px) {
+
+                max-width: 600px;
+                width: 100%;
+            }
         }
 
         .circle_b4_up {
@@ -592,7 +636,7 @@ $font-size: 24px;
             bottom: 35rem;
             z-index: -1;
 
-            @media screen and (max-width:991px) {
+            @media screen and (max-width:1399px) {
                 display: none;
             }
         }
@@ -601,19 +645,23 @@ $font-size: 24px;
     .block-4__text-block {
         padding-left: 4.5rem;
 
+        @media screen and (min-width: 992px) and (max-width: 1399px) {
+            padding-left: 1rem;
+        }
+
         @media screen and (max-width:991px) {
             padding-left: 0rem;
         }
 
         .card-body__title {
-            margin: 2rem 0 2rem 0;
+            margin: 2rem auto;
 
             .card-title__block-4 {
                 font-weight: 500;
                 font-size: 2rem;
                 line-height: 2.375rem;
                 color: $color-gray;
-                margin: 0;
+                margin: 0 auto;
 
                 @media screen and (max-width:399px) {
                     font-size: 1.5rem;
@@ -690,6 +738,10 @@ $font-size: 24px;
             margin-right: 0.625rem;
         }
 
+        #fith_item {
+            max-width: 30.4rem;
+        }
+
         #sixth_item {
             max-width: 30.4rem;
         }
@@ -725,8 +777,9 @@ $font-size: 24px;
     }
 
     @media screen and (max-width:1400px) {
-        max-width: 500px;
+        max-width: 600px;
         right: 2rem;
+        top: 40rem;
     }
 }
 
@@ -968,5 +1021,29 @@ $font-size: 24px;
 .revies__indicators {
     width: 15rem;
     margin: 0.5rem auto;
+}
 
+
+.services__tittle-top,
+.title-block-4,
+.block-5__title,
+.title__block-6 {
+
+    @media screen and (max-width:399px) {
+        margin-bottom: 2rem;
+    }
+}
+
+.main__container,
+.services__container,
+.aboutme__container,
+.price__container,
+.reviews__container {
+    @media screen and (max-width:399px) {
+        margin-bottom: 2rem;
+    }
+
+    @media screen and (min-width:400px)and (max-width:768px) {
+        margin-bottom: 4rem;
+    }
 }
