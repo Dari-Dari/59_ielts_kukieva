@@ -3,280 +3,1193 @@
 
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  <link rel="stylesheet" href="/styles/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-    rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
 
-  <title>IELTS KUKIEVA</title>
-  <link rel="shortcut icon" href="/assets/icons/icon-site.png">
+    <title>IELTS KUKIEVA</title>
+    <link rel="shortcut icon" href="/assets/icons/icon-site.png">
 </head>
 
 <body>
 
-  <header class="header">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="логотип" width="30" height="24">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Подготовка</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Для кого?</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Стоимость</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Почему я?</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <button class="btn btn-outline-primary" type="submit">Связаться</button>
-          </form>
-        </div>
-      </div>
-    </nav>
-  </header>
 
-  <main class="main">
+    <header class="header">
+        <a id="header-anchor"></a>
+        <nav class="navbar navbar-expand-lg d-none d-lg-block">
+            <div class="container-fluid">
+                <div class="navbar-brand header-logo">
+                    <img src="/assets/icons/logo.svg" alt="логотип" class="header_logo">
+                </div>
+                <div class="collapse navbar-collapse header-menu mt-md-3" id="navbarSupportedContent">
+                    <a class="nav-link active header__link" aria-current="page" href="#services-anchor">Услуги</a>
+                    <a class="nav-link active header__link" aria-current="page" href="#aboutme-anchor">Обо мне</a>
+                    <a class="nav-link active header__link" aria-current="page" href="#price-anchor">Стоимость</a>
+                    <a class="nav-link active header__link" aria-current="page" href="#reviews-anchor">Отзывы</a>
+                    <div class="button__header pb-sm-2 my-sm-4">
+                        <a class="button__header-red btn d-flex align-items-center justify-content-center p-0 m-0"
+                            href="https://t.me/ielts_kukieva" role="button">Связаться</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar header__navbar-small d-lg-none">
+            <div class="container mb-0">
+                <a class="navbar-brand" href="#"><ya-tr-span data-index="247-0" data-translated="true"
+                        data-source-lang="en" data-target-lang="ru" data-value="Offcanvas navbar"
+                        data-translation="Отключена панель навигации" data-ch="0" data-type="trSpan"></ya-tr-span><img
+                        src="/assets/icons/logo.svg" alt="логотип" class="header_logo d-block d-lg-none"></a>
+                <button class="navbar-toggler header__button-menu" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                    aria-label="Переключение навигации">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-top bg-body-tertiary header__offcanvas-height" tabindex="-1"
+                    id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header header__offcanvas">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><ya-tr-span data-index="104-0"
+                                data-translated="true" data-source-lang="en" data-target-lang="ru"
+                                data-value="Offcanvas" data-translation="Offcanvas" data-ch="1" data-type="trSpan">
+                                <img src="/assets/icons/logo.svg" alt="логотип" class="header_logo">
+                            </ya-tr-span></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Закрыть"></button>
+                    </div>
+                    <div
+                        class="offcanvas-body header__offcanvas header__offcanvas-body d-flex justify-content-center text-center">
+
+                        <div class="navbar-nav">
+                            <a class="nav-link active header__link" aria-current="page"
+                                href="#services-anchor">Услуги</a>
+                            <a class="nav-link active header__link" aria-current="page" href="#aboutme-anchor">Обо
+                                мне</a>
+                            <a class="nav-link active header__link" aria-current="page"
+                                href="#price-anchor">Стоимость</a>
+                            <a class="nav-link active header__link" aria-current="page"
+                                href="#reviews-anchor">Отзывы</a>
+                            <div class="button__header pb-sm-2 my-sm-4">
+                                <a class="button__header-red btn btn-danger d-flex align-items-center justify-content-center py-2 my-3"
+                                    href="https://t.me/ielts_kukieva" role="button">Связаться</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN-BANNER -->
+    <!-- 
+  <main>
     <section class="main__block-2 block-2">
-      <div class="container">
-        <div class="card-mb-3" style="max-width: 768px;">
-          <div class="row g-4">
-            <div class="col-8">
-              <div class="card-body">
-                <h5 class="card-title fs-1">IELTS. Качественно, профессионально.</h5>
-                <p class="card-text">Качественно, профессионально - Ваше серьёзное отношение к обучению обязательно.
-                  Через анализ языка - к свободному общению.</p>
-                <button class="btn btn-outline-primary" type="submit">Связаться</button>
+      <div class="container main__container">
+        <div class="card-mb-3">
+          <div class="row g-4 main__main-title">
+            <div class="col-12 col-md-5 main__main-text">
+              <div class="card-body main__card-body">
+                <h5 class="card-title main__card-title">IELTS <br> Качественно,<br> профессионально.</h5>
+                <p class="card-text main__card-text">Мария Кукиева <br>English Teacher</p>
+                <a href="https://t.me/ielts_kukieva" class="btn-main d-flex align-items-center justify-content-center" role="button">Записаться на урок</a>
               </div>
             </div>
-            <div class="col-4">
-              <img src="assets/images/IMG_8877 без фона.png" class="card-img-right" alt="welcome picture">
+            <div class="col-md-7 main__main-img">
+<img src="/assets/images/" alt="">
+              <img src="assets/images/Group47.png" class="card-img-right d-none d-md-block" alt="welcome picture">
+              <img src="/assets/images/main-photo.png" class="card-img-right-small d-block d-md-none"
+              alt="welcome picture">
+              <img src="assets/images/Ellipse2.png" class="Ellipse" alt="Ellipse">
+              <img src="assets/images/Ellipse3.png" class="Ellipsetwo" alt="Ellipsetwo">
+
             </div>
           </div>
         </div>
       </div>
+    </section>-->
+
+    <section class="main__section">
+        <div class="container main__container d-flex justify-content-between">
+            <div class="main__text">
+                <div class="main__card-body">
+                    <h5 class="main__card-title">IELTS <br> Качественно,<br> профессионально.</h5>
+                    <p class="main__card-text">Мария Кукиева <br>English Teacher</p>
+                    <a href="https://t.me/ielts_kukieva"
+                        class="btn-main d-flex align-items-center justify-content-center" role="button">Записаться на
+                        урок</a>
+                </div>
+            </div>
+            <div class="main__foto d-none d-md-block">
+            </div>
+        </div>
     </section>
 
     <section class="main__block-3 block-3">
-      <div class="container">
-        <h5 class="card-title fs-1">Услуги</h5>
-        <div class="row">
-          <div class="col-6">
-            <div class="card" style="width: 18rem;">
-              <img src="assets/images/b3_services_img.JPEG" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Индивидуальная подготовка к IELTS</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                  data-bs-target="#exampleModal">Узнать больше</button>
 
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                  aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Из чего складывается индивидуальная
-                          подготовка к IELTS?</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        1. Определение Вашего входного балла - входное тестирование по формату IELTS (все 4 навыка) с
-                        выставлением баллов за каждую часть и общего балла за экзамен (оценка по критериям IELTS).
-                        2. Разработка индивидуальной стратегии подготовки к IELTS в зависимости от полученного входного
-                        балла, требуемого балла и сроков сдачи IELTS.
-                        3. Отработка экзаменационного формата и развитие т.н. выносливости - умение хорошо справиться со
-                        всеми частями на экзамене и уложиться во время.
-                        4. Тренировка устной части экзамена (IELTS Speaking Mock Test) с соблюдением экзаменационного
-                        регламента и выставлением баллов за каждый критерий (беглость и связность речи, лексический и
-                        грамматический диапазон, произношение).
-                        5. Проверка письменных работ с указание баллов по всем критериям и объяснением того, что уже
-                        хорошо и что нужно улучшить, чтобы получить требуемый балл.
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-                      </div>
+        <div class="container services__container">
+            <div class="card-title fs-1 ">
+                <a id="services-anchor"></a>
+                <h5 class="services__tittle-top">Услуги</h5>
+
+            </div>
+            <div class="row g-2">
+                <div class="col-md-6 col-xxl-3 my-sm-2 d-flex justify-content-center services__ellipse">
+                    <img src="/assets/images/Ellipse_services.png"
+                        class="services__img-bck d-none d-md-block d-xxl-none" alt="circle">
+                    <div class="card-modal">
+                        <div class="card-body__services p-2">
+                            <div class="card-title__services">
+                                <h5 class="card-title text-center py-3">Exam Preparation Classes</h5>
+                                <p class="card-text">Индивидуальные занятия по подготовке к IELTS</p>
+                            </div>
+                            <div class="text-center py-2">
+                                <button type="button" class="btn__services btn-danger btn-sm " data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">Подробнее</button>
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog services__modal-dialog">
+                                    <div class="modal-content__services">
+                                        <div class="modal-header services__modal-header">
+                                            <h1 class="modal-title fs-5 text-center services__modal-dialog-title"
+                                                id="exampleModalLabel">
+                                                <b>Exam
+                                                    Preparation
+                                                    Classes</b><br>Индивидуальные
+                                                занятия по подготовке к IELTS
+                                            </h1>
+
+                                            <button type="button" class="btn-close btn services__modal-dialog-btn"
+                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="text-center">
+                                                <b>Из чего складывается индивидуальная подготовка к IELTS?</b>
+                                                <div class="text-start">
+                                                    <ol class="list-group list-group-numbered">
+                                                        <li class="list-group-flush">1. Определение Вашего
+                                                            <b>входного балла</b>- входное
+                                                            тестирование по
+                                                            формату IELTS (все 4
+                                                            навыка)
+                                                            с
+                                                            выставлением баллов за каждую часть и общего балла за
+                                                            экзамен (оценка по критериям
+                                                            IELTS).
+                                                        </li>
+                                                        <li class="list-group-flush">2. Разработка <b>индивидуальной
+                                                                стратегии подготовки</b> к
+                                                            IELTS в
+                                                            зависимости от полученного
+                                                            входного балла, требуемого балла и сроков сдачи IELTS.
+                                                        </li>
+                                                        <li class="list-group-flush">3. Отработка экзаменационного
+                                                            формата и <b>развитие
+                                                                выносливости</b>
+                                                            - умение хорошо справиться
+                                                            со
+                                                            всеми частями на экзамене и уложиться во время.</li>
+                                                        <li class="list-group-flush">4. <b>Тренировка устной
+                                                                части</b> экзамена (IELTS Speaking
+                                                            Mock
+                                                            Test) с соблюдением
+                                                            экзаменационного
+                                                            регламента и выставлением баллов за каждый критерий
+                                                            (беглость и связность речи,
+                                                            лексический
+                                                            и
+                                                            грамматический диапазон, произношение).</li>
+                                                        <li class="list-group-flush">5. <b>Проверка письменных
+                                                                работ</b> с подробной обратной
+                                                            связью и
+                                                            указанием баллов по всем
+                                                            критериям
+                                                            и объяснением того, что уже хорошо и что нужно улучшить
+                                                            и как, чтобы получить требуемый
+                                                            балл.</li>
+                                                    </ol>
+                                                </div>
+                                                <p class="text-center">
+                                                    Индивидуальная подготовка к IELTS. <b>Для кого?</b>
+                                                </p>
+                                                <ol class="list-group list-group-numbered">
+                                                    <li class="list-group-flush">1. Вы хотите <b>получить
+                                                            профессиональную оценку</b> Ваших
+                                                        знаний
+                                                        английского языка и навыков в
+                                                        формате IELTS.</li>
+                                                    <li class="list-group-flush">2. Вам нужно <b>быстро вникнуть в
+                                                            формат</b> экзамена IELTS.
+                                                    </li>
+                                                    <li class="list-group-flush">3. Вам необходимо <b>понять что уже
+                                                            хорошо</b>, а <b>что нужно
+                                                            улучшить</b>
+                                                        и <b>как</b>, чтобы получить на
+                                                        экзамене требуемый балл.</li>
+                                                    <li class="list-group-flush">4. Вы хотите прочувствовать
+                                                        возможные сложности реального
+                                                        экзамена и <b>ищите специалиста</b>,
+                                                        который <b>может воссоздать</b> для Вас <b>экзаменационную
+                                                            обстановку </b> и <b>поможет
+                                                            отработать</b>
+                                                        возникшие
+                                                        сложности. </li>
+                                                    <li class="list-group-flush">5. Вы хотите <b>сдать IELTS</b> на
+                                                        нужный балл <b>с первого
+                                                            раза</b>.</li>
+                                                </ol>
+                                            </div>
+                                            <div class="text-center">
+                                                Индивидуальная подготовка к IELTS. <b>Почему я?</b>
+                                                <ol class="list-group list-group-numbered">
+                                                    <li class="list-group-flush">1. 9 лет готовлю студентов к IELTS -
+                                                        мои студенты живут и
+                                                        работают в Австралии,
+                                                        Великобритании, Канаде, Новой Зеландии, Японии.</li>
+                                                    <li class="list-group-flush">2. Сдала уже не один экзамен по
+                                                        методике преподавания английского
+                                                        языка (TKT, CELTA), а
+                                                        также
+                                                        ряд языковых экзаменов и подтвердила уровень владения языком -
+                                                        CPE (C2 English Language
+                                                        Proficiency).</li>
+                                                    <li class="list-group-flush">3. Прошла годовое обучение у
+                                                        действующего экзаменатора IELTS по
+                                                        методике подготовки к IELTS
+                                                        на
+                                                        разные баллы и продолжаю регулярную подготовку -  поддерживаю и
+                                                        совершенствую навык оценки
+                                                        устных и письменных работ своих студентов по критериям IELTS.
+                                                    </li>
+                                                    <li class="list-group-flush">4. Понимаю критерии оценивания устной и
+                                                        письменной частей IELTS,
+                                                        умею проводить и оценивать
+                                                        устную часть экзамена с соблюдением экзаменационного регламента.
+                                                    </li>
+                                                    <li class="list-group-flush">5. Сама пишу для своих студентов
+                                                        обучающие академические эссе,
+                                                        письма, а также делаю
+                                                        описания
+                                                        графиков на разные баллы.</li>
+                                                </ol>
+                                            </div>
+                                            <p class="text-start">
+                                                <b>Индивидуальная подготовка к IELTS <br>
+                                                    Продолжительность - 60 мин. <br>
+                                                    Стоимость - 3000 руб.</b>
+                                            </p>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger btn-sm"
+                                                data-bs-dismiss="modal">Закрыть</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
+                <div class="col-md-6 col-xxl-3 my-sm-2 d-flex justify-content-md-start justify-content-center">
+                    <div class="card-modal">
+                        <div class="card-body__services p-2">
+                            <div class="card-title__services">
+                                <h5 class="card-title text-center py-3">IELTS Writing</h5>
+                                <p class="card-text">Индивидуальные занятия по подготовке к письменной части IELTS
+                                </p>
+                            </div>
+                            <div class="text-center py-2">
+                                <button type="button" class="btn__services btn-danger btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal-content">Подробнее</button>
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal-content" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog services__modal-dialog">
+                                    <div class="modal-content__services">
+                                        <div class="modal-header services__modal-header">
+                                            <div class="modal-title fs-5 text-center services__modal-dialog-title"
+                                                id="exampleModalLabel-content">
+                                                <h5> IELTS
+                                                    Writing</h5>
+                                                <h5> Индивидуальные занятия по подготовке к письменной
+                                                    части IELTS</h5>
+                                            </div>
+
+                                            <button type="button" class="btn-close btn services__modal-dialog-btn"
+                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="text-start">
+                                                <ul class="list-group list-group-numbered">
+                                                    <li class="list-group-flush">&#8226;IELTS Academic - <b>Writing
+                                                            Task 1</b> - описание
+                                                        графика (7
+                                                        видов)
+                                                    </li>
+                                                    <li class="list-group-flush">&#8226;IELTS General - <b>Writing
+                                                            Task 1</b> - письмо (5 видов)
+                                                    </li>
+                                                    <li class="list-group-flush">&#8226;IELTS Academic/General -
+                                                        <b>Writing Task 2</b> -
+                                                        написание
+                                                        академического эссе (5 видов)
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <p class="text-center">
+                                                <b>Как проходят индивидуальные занятия по подготовке к письменной
+                                                    части IELTS?</b>
+                                            </p>
+                                            <div class="text-start">
+                                                <ul class="list-group list-group-numbered">
+                                                    <li class="list-group-flush">1. <b>Определяемся с баллом</b>, на
+                                                        который Вам нужно сдать
+                                                        письменную часть IELTS.
+
+                                                    </li>
+                                                    <li class="list-group-flush">2. Если Вы ранее не работали с
+                                                        таким типом письменных заданий,
+                                                        то <b>знакомимся с форматом</b> письменной части экзамена -
+                                                        анализируем готовые
+                                                        графики/письма/эссе. При обучении я использую <b>только
+                                                            проверенные материалы</b> - это
+                                                        работы
+                                                        написанные мной или экзаменатором IELTS. Предоставленные для
+                                                        обучения письменные работы
+                                                        будут соответствовать необходимому Вам баллу.
+                                                    </li>
+                                                    <li class="list-group-flush">3. <b>Знакомимся с критериями</b>
+                                                        письменной части экзамена -
+                                                        важно
+                                                        понимать, <b>что</b> у Вас <b>уже хорошо</b> получается и
+                                                        <b>над чем нужно поработать</b>
+                                                        и <b>как</b>,
+                                                        чтобы
+                                                        Ваша
+                                                        письменная работа соответствовала критериям на нужный Вам
+                                                        балл.
+                                                    </li>
+                                                    <li class="list-group-flush">4. После знакомства с форматом, я
+                                                        <b>предложу</b> Вам
+                                                        самостоятельно
+                                                        выполнить  работу - <b>написать эссе</b> и описать
+                                                        <b>график</b> (или <b>письмо</b>) - это
+                                                        зависит от
+                                                        того, к
+                                                        какому модулю экзамена Вы готовитесь: IELTS Academic или
+                                                        IELTS General.
+                                                    </li>
+                                                    <li class="list-group-flush">5. К каждой написанной Вами работе
+                                                        я <b>даю подробную обратную
+                                                            связь</b>, выставляю баллы по 4 критериям письменной
+                                                        части IELTS, <b>обозначаю зону
+                                                            ближайшего
+                                                            развития</b>: чему важнее всего научиться сейчас, чтобы
+                                                        Ваша работа получила более
+                                                        высокий
+                                                        балл.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <p class="text-start">
+                                                <i><b>IELTS Writing</b> Индивидуальные занятия по подготовке к
+                                                    письменной части IELTS<br>
+                                                    Продолжительность - 60 мин.<br>
+                                                    Стоимость - 3000 руб.</i>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger btn-sm"
+                                                data-bs-dismiss="modal">Закрыть</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xxl-3 my-sm-2 d-flex justify-content-center services__ellipse">
+                    <img src="/assets/images/Ellipse_services.png" class="services__img-bck d-none d-xxl-block"
+                        alt="circle">
+                    <div class="card-modal">
+                        <div class="card-body__services p-2">
+                            <div class="card-title__services">
+                                <h5 class="card-title text-center py-3">Teacher Training Sessions</h5>
+                                <p class="card-text">Консультации для преподавателей по вопросам подготовки к IELTS
+                                </p>
+                            </div>
+                            <div class="text-center p-2">
+                                <button type="button" class="btn__services btn-danger btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal-text">Подробнее</button>
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal-text" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog services__modal-dialog">
+                                    <div class="modal-content__services">
+                                        <div class="modal-header services__modal-header">
+                                            <div class="modal-title fs-5 text-center services__modal-dialog-title"
+                                                id="exampleModalLabel-text">
+                                                <h5>Teacher Training
+                                                    Sessions</h5>
+                                                <h5>Консультации для преподавателей по вопросам подготовки к IELTS</h5>
+                                            </div>
+
+
+                                            <button type="button" class="btn-close btn services__modal-dialog-btn"
+                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p class="text-start">
+                                                Консультации для преподавателей по вопросам подготовки к IELTS
+                                                проходят в двух форматах:</p>
+                                            <div class="text-start">
+                                                <ul class="list-group list-group-numbered">
+                                                    <li class="list-group-flush">1. <b>Готовая консультация</b> по
+                                                        формату IELTS - включает в
+                                                        себя 3
+                                                        части:
+                                                    </li>
+
+                                                    <li class="list-group-flush">-теоретическая часть - общая
+                                                        информация об экзамене IELTS
+                                                    </li>
+                                                    <li class="list-group-flush">-стратегия подготовки студента или
+                                                        “А что делать прямо
+                                                        сейчас”?
+                                                    </li>
+                                                    <li class="list-group-flush">-практическая часть (с моей
+                                                        письменной обратной связью в
+                                                        течение 1
+                                                        недели)</li>
+                                                </ul>
+                                            </div>
+                                            <p class="text-start">
+                                                <b>Продолжительность - 2.5 часа<br>
+                                                    Стоимость - 8500 руб*</b>
+                                            </p>
+                                            <i>*в течение 2 недель после консультации у Вас есть возможность
+                                                осмыслить материал и задать
+                                                любые
+                                                возникшие вопросы - я всегда на связи и готова помочь.</i>
+
+                                            <div class="text-start">
+
+                                                <p class="list-group-flush">2. <b>Разработка консультации под
+                                                        запрос</b> - Вы обозначаете
+                                                    круг
+                                                    тем,
+                                                    которые Вас интересуют в рамках
+                                                    IELTS и я индивидуально под запрос готовлю консультацию -
+                                                    все
+                                                    материалы и запись самой
+                                                    консультации у Вас сохраняются после встречи.
+                                                </p>
+                                            </div>
+                                            <p class="text-start">
+                                                <b>Продолжительность - 80 минут<br>
+                                                    Стоимость - 4000 руб.</b>
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger btn-sm"
+                                                data-bs-dismiss="modal">Закрыть</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xxl-3 my-sm-2 d-flex  justify-content-md-start justify-content-center">
+                    <div class=" card-modal">
+                        <div class="card-body__services p-2">
+                            <div class="card-title__services">
+                                <h5 class="card-title text-center py-3">General English</h5>
+                                <p class="card-text">Индивидуальные занятия по общему английскому
+                                </p>
+                            </div>
+                            <div class="text-center p-2">
+                                <button type="button" class="btn__services btn-danger btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal-modal">Подробнее</button>
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal-modal" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog services__modal-dialog">
+                                    <div class="modal-content__services">
+                                        <div class="modal-header services__modal-header">
+                                            <div class="modal-title fs-5 text-center services__modal-dialog-title"
+                                                id="exampleModalLabel-modal">
+                                                <h5>General
+                                                    English</h5>
+                                                <h5>Индивидуальные занятия по общему английскому</h5>
+                                            </div>
+                                            <button type="button" class="btn-close btn services__modal-dialog-btn"
+                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p class="text-start">
+                                                General English Индивидуальные занятия по общему английскому. <b>Для
+                                                    кого?</b>
+                                            </p>
+                                            <div class="text-start">
+                                                <ul class="list-group list-group-numbered">
+                                                    <li class="list-group-flush">1. Вы <b>учили</b> английский язык
+                                                        <b>самостоятельно</b> по
+                                                        книгам
+                                                        <b>и поняли, что
+                                                            без наставника никак</b>. Вы
+                                                        <b>хотите</b> вывести пассивные знания в актив -
+                                                        <b>говорить!</b>
+                                                    </li>
+                                                    <li class="list-group-flush">2. Вы учили английский в школе или
+                                                        институте, давно им не
+                                                        пользовались, <b>хотите разговориться</b>.</li>
+                                                    <li class="list-group-flush">3. Вы решили, что Вам нужен
+                                                        английский для работы и <b>ищете
+                                                            специалиста</b>, который сможет
+                                                        разобраться в Вашей профессиональной тематике, подобрать
+                                                        нужную лексику, <b>выстроить
+                                                            курс
+                                                            под
+                                                            Ваш
+                                                            запрос</b>.</li>
+                                                    <li class="list-group-flush">4. Вы <b>хотите сдавать IELTS</b>,
+                                                        но не дотягиваете по языку
+                                                        на
+                                                        проходной
+                                                        балл.</li>
+                                                </ul>
+                                            </div>
+                                            <p class="text-start">
+                                                General English Индивидуальные занятия по общему английскому.
+                                                <b>Как
+                                                    организован
+                                                    процесс?</b>
+                                            </p>
+                                            <div class="text-start">
+                                                <ul>
+                                                    <li class="list-group-flush">1. Встречи проходят
+                                                        <b>регулярно</b>, в
+                                                        zoom - у Вас есть
+                                                        <b>cтабильное
+                                                            расписание</b>.
+                                                    </li>
+                                                    <li class="list-group-flush">2. Всю <b>работу организуем в гугл
+                                                            документе</b> - у Вас есть
+                                                        постоянный
+                                                        доступ к информации. После
+                                                        каждого занятия я <b>отправляю Вам Feedback Form</b> (форма
+                                                        обратной связи), где
+                                                        прописываю
+                                                        лексико-грамматические и фонетические аспекты урока.
+                                                        Дополнительно в работу мы берём
+                                                        учебник
+                                                        и
+                                                        аутентичный материал.</li>
+                                                    <li class="list-group-flush">3. На первой встрече мы с Вами
+                                                        <b>знакомимся</b>, я провожу
+                                                        анализ
+                                                        Ваших
+                                                        потребностей (Needs analysis).
+                                                        Needs analysis - это <b>беседа на английском языке</b>, во
+                                                        время
+                                                        которой я спрашиваю про
+                                                        Ваш
+                                                        предыдущий
+                                                        опыт изучения английского языка. На основании этой беседы я
+                                                        <b>определяю Ваш текущий
+                                                            уровень</b>
+                                                        английского языка и мы <b>обговариваем</b> основные
+                                                        <b>направления работы</b>.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <p class="text-start">
+                                                <b>Продолжительность - 60 минут<br>
+                                                    Стоимость - 3000 руб.</b>
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger btn-sm"
+                                                data-bs-dismiss="modal">Закрыть</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-          </div>
-          <div class="col-6">
-            <div class="card" style="width: 18rem;">
-              <img src="assets/images/b3_services_img.JPEG" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Индивидуальные занятия по подготовке к письменной части IELTS</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Узнать больше</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="card" style="width: 18rem;">
-              <img src="assets/images/b3_services_img.JPEG" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Консультации для преподавателей по вопросам подготовки к IELTS</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Узнать больше</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="card" style="width: 18rem;">
-              <img src="assets/images/b3_services_img.JPEG" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Общий английский</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Узнать больше</a>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
+
+
+
+    <!-- ABOUTME -->
     <section class="main__block-4 block-4">
-      <div class="container">
-        <h5 class="card-title fs-1">Обо мне</h5>
-        <div class="card mb-lg-0" style="max-width: 1500px;">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="assets/images/b4_aboutme_img.JPG" class="img-fluid rounded-start" alt="...">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Мария Кукиева</h5>
-                <p class="card-text">Лингвист-переводчик, Уральский Федеральный Университет (УРФУ), Физико-технический
-                  факультет, Кафедра иностранных языков, г. Екатеринбург (диплом с отличием)</p>
-              </div>
-            </div>
-          </div>
+        <div class="aboutme__ellipse-down">
+            <img src="assets/images/ellipse_block4_down.svg" alt="circle" class="circle_b4_down">
         </div>
-      </div>
+        <div class="container aboutme__container">
+            <a id="aboutme-anchor"></a>
+            <h5 class="card-title title-block-4">Обо мне</h5>
+            <div class="mb-lg-0 border-0">
+                <div class="row g-0">
+                    <div class="col-xl-12 col-xxl-6 block-4__image-block d-flex justify-content-center">
+                        <img src="assets/images/b4_aboutme_img.JPG" class="img-fluid rounded block4__img"
+                            alt="Мария Кукиева">
+                        <img src="assets/images/ellipse_block4_up.svg" alt="circle" class="circle_b4_up">
+                    </div>
+                    <div class="col-xl-12 col-xxl-6 block-4__text-block d-flex justify-content-center">
+                        <div class="block-4__card-body">
+                            <div class="card-body__title">
+                                <h6 class="card-title__block-4">Мария Кукиева</h6>
+                                <h6 class="card-subtitle__block-4">English teacher</h6>
+                            </div>
+                            <ul class="list-group__block4 list-group-flush">
+                                <li class="list-group-item d-flex align-items-center border-0">
+                                    <img src="assets/icons/icon_arrowcircleright_.svg" class="bi bi-arrow-right-circle"
+                                        alt="icon arrow circle right">
+                                    <p class="list-group-item__elements" id="first_item">Лингвист-переводчик, Уральский
+                                        Федеральный
+                                        Университет (УрФУ), Физико-технический факультет,
+                                        Кафедра
+                                        иностранных языков, г. Екатеринбург (диплом с отличием)</p>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center border-0">
+                                    <img src="assets/icons/icon_arrowcircleright_.svg" class="bi bi-arrow-right-circle"
+                                        alt="icon arrow circle right">
+                                    <p class="list-group-item__elements" id="second_item">Международные сертификаты по
+                                        методике
+                                        преподавания - Cambridge CELTA, TKT</p>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center border-0">
+                                    <img src="assets/icons/icon_arrowcircleright_.svg" class="bi bi-arrow-right-circle"
+                                        alt="icon arrow circle right">
+                                    <p class="list-group-item__elements" id="third_item">CPE (C2 English Language
+                                        Proficiency)</p>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center border-0"
+                                    id="list-group-item__fourth-element">
+                                    <img src="assets/icons/icon_arrowcircleright_.svg" class="bi bi-arrow-right-circle"
+                                        alt="icon arrow circle right">
+                                    <p class="list-group-item__elements" id="fourth_item">10 лет преподаю английский
+                                        язык, из них 9 лет
+                                        готовлю студентов к IELTS:</p>
+                                </li>
+                            </ul>
+                            <ul class="list-group__aboutme">
+                                <li class="list-group-item__second d-flex align-items-center border-0">
+                                    <img src="assets/icons/dot.svg" alt="dot" class="dot__icon">
+                                    <p class="list-group-item__elements" id="fith_item">Кембриджский центр УрФУ -
+                                        подготовка ППС
+                                        (профессорско-преподавательский состав) к Кембриджским экзаменам KET и FCE</p>
+                                </li>
+                                <li class="list-group-item__second d-flex align-items-center border-0">
+                                    <img src="assets/icons/dot.svg" alt="dot" class="dot__icon">
+                                    <p class="list-group-item__elements" id="sixth_item">Международный экзаменационный
+                                        центр English Lab
+                                        - группы по подготовке к IELTS - проверила более 300 эссе</p>
+                                </li>
+                                <li class="list-group-item__second d-flex align-items-center border-0">
+                                    <img src="assets/icons/dot.svg" alt="dot" class="dot__icon">
+                                    <p class="list-group-item__elements" id="seventh_item">Тьютор на курсе
+                                        Академического письма (формат
+                                        IELTS)</p>
+                                </li>
+                                <li class="list-group-item__second d-flex align-items-center border-0">
+                                    <img src="assets/icons/dot.svg" alt="dot" class="dot__icon">
+                                    <p class="list-group-item__elements" id="eighth_item">Создала свой курс по написанию
+                                        писем - IELTS
+                                        General (Writing Task 1)</p>
+                                </li>
+                                <li class="list-group-item__second d-flex align-items-center border-0">
+                                    <img src="assets/icons/dot.svg" alt="dot" class="dot__icon">
+                                    <p class="list-group-item__elements" id="ninth_item">Консультирую преподавателей по
+                                        вопросам
+                                        подготовки к IELTS</p>
+                                </li>
+                            </ul>
+                            <img src="assets/images/ellipse_block4_down.svg" alt="circle" class="circle_b4_down">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+
+
+
+    <!-- PRICE -->
 
     <section class="main__block-5 block-5">
-      <div class="container">
-        <h5 class="card-title fs-1">Стоимость занятий</h5>
-        <div class="row">
-          <div class="col-4">
-            <div class="card-body">
-              <h5 class="card-title">Индивидуально</h5>
-              <p class="card-text">Подготовка к IELTS. Академическое письмо (формат IELTS). Общий английский</p>
-              <p class="card-text">Стоимость: 5000 р</p>
-              <button class="btn btn-outline-primary" type="submit">Связаться</button>
+        <div class="container price__container">
+            <a id="price-anchor"></a>
+            <h5 class="card-title block-5__title">Стоимость занятий</h5>
+            <div class="row price__row">
+
+                <div class="col-12 col-md-6 col-xxl-3 block-5__card-col py-3">
+                    <div class="card rounded-2 border-0 block-5__card">
+                        <div class="card-body block-5_card-body">
+                            <h5 class="card-title block-5__card-title">Exam Preparation Classes</h5>
+                            <p class="card-text block-5__list-group m-0">&bull; Определение входного балла</p>
+                            <p class="card-text block-5__list-group m-0">&bull; Разработка индивидуальной стратегии
+                                подготовки</p>
+                            <p class="card-text block-5__list-group m-0">&bull; Отработка экзаменационного формата</p>
+                            <p class="card-text block-5__list-group m-0">&bull; Тренировка устной части</p>
+                            <p class="card-text block-5__list-group m-0">&bull; Проверка письменных работ</p>
+                            <div class="block-5__card_bottom">
+                                <p class="card-text block-5__card_time">Продолжительность - 60мин.</p>
+                                <h6 class="card-text block-5__card_price">Стоимость: 3000 ₽</h6>
+                                <div class="card_footer block-5__card_button my-4"><a
+                                        class="btn btn-danger block-5__button" href="https://t.me/ielts_kukieva"
+                                        role="button">Связаться</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xxl-3 block-5__card-col py-3">
+                    <div class="card block-5__card rounded-2 border-0">
+                        <div class="card-body block-5_card-body">
+                            <h5 class="card-title block-5__card-title">IELTS Writing</h5>
+                            <p class="card-text block-5__list-group m-0">&bull; IELTS Academic - Writing Task 1 -
+                                описание графика
+                                (7 видов)</p>
+                            <p class="card-text block-5__list-group m-0">&bull; IELTS General - Writing Task 1 - письмо
+                                (5 видов)
+                            </p>
+                            <p class="card-text block-5__list-group m-0">&bull; IELTS Academic/General - Writing Task 2
+                                - написание
+                                академического эссе (5
+                                видов)</p>
+                            <div class="block-5__card_bottom">
+                                <p class="card-text block-5__card_time">Продолжительность - 60мин.</p>
+                                <h6 class="card-text block-5__card_price">Стоимость: 3000 ₽</h6>
+                                <div class="card_footer block-5__card_button my-4"><a
+                                        class="btn btn-danger block-5__button" href="https://t.me/ielts_kukieva"
+                                        role="button">Связаться</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xxl-3 block-5__card-col py-3">
+                    <div class="card block-5__card rounded-2 border-0">
+                        <div class="card-body block-5_card-body">
+                            <h5 class="card-title block-5__card-title">Teacher Training Sessions</h5>
+                            <p class="card-text block-5__list-group m-0">&bull; Готовая консультация по формату IELTS
+                            </p>
+                            <div class="block-5__card_bottom">
+                                <p class="card-text block-5__card_time">Продолжительность - 2,5 часа</p>
+                                <h6 class="card-text block-5__card_price">Стоимость: 8500 ₽</h6>
+                            </div>
+                            <div class="block-5__card_bottom">
+                                <p class="card-text block-5__list-group pb-2">&bull; Разработка консультации под запрос
+                                </p>
+                                <p class="card-text block-5__card_time">Продолжительность - 80мин.</p>
+                                <h6 class="card-text block-5__card_price">Стоимость: 4000 ₽</h6>
+                                <div class="block-5__card_button my-4">
+                                    <a class="card_footer btn btn-danger block-5__button"
+                                        href="https://t.me/ielts_kukieva" role="button">Связаться</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xxl-3 block-5__card-col py-3">
+                    <div class="card block-5__card rounded-2 border-0">
+                        <div class="card-body block-5_card-body">
+                            <h5 class="card-title block-5__card-title">General English</h5>
+                            <p class="card-text block-5__list-group m-0">&bull; Анализ текущего уровня языка</p>
+                            <p class="card-text block-5__list-group m-0">&bull; Составление индивидуального плана
+                                обучения с учётом
+                                Ваших целей и задач.</p>
+                            <div class="block-5__card_bottom">
+                                <p class="card-text block-5__card_time">Продолжительность - 60мин.</p>
+                                <h6 class="card-text block-5__card_price">Стоимость: 3000 ₽</h6>
+                                <div class="card_footer block-5__card_button my-4"> <a
+                                        class="btn btn-danger block-5__button" href="https://t.me/ielts_kukieva"
+                                        role="button">Связаться</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
-          </div>
-          <div class="col-4">
-            <div class="card-body">
-              <h5 class="card-title">Консультации</h5>
-              <p class="card-text">Подготовка к IELTS. Академическое письмо (формат IELTS). Общий английский</p>
-              <p class="card-text">Стоимость: 5000 р</p>
-              <button class="btn btn-outline-primary" type="submit">Связаться</button>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card-body">
-              <h5 class="card-title">Консультации</h5>
-              <p class="card-text">Консультации для преподавателей Консультация по формату IELTS Консультация по
-                вопросам подготовки к IELTS</p>
-              <p class="card-text">Стоимость: 5000 р</p>
-              <button class="btn btn-outline-primary" type="submit">Связаться</button>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
-    <section class="main__block-6 block-6">
-      <div class="container">
-        <h5 class="card-title fs-1">Отзывы</h5>
-        <div id="carouselExampleDark" class="carousel carousel-dark slide">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
-              <img src="assets/images/b5_reviews_img2.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Иван Иванов</h5>
-                <p>Отзыв .</p>
-              </div>
+
+
+
+    <!-- REVIEWS -->
+
+    <section class="main__block-6 block-6 mt-sm-3">
+        <div class="container reviews__container">
+            <a id="reviews-anchor"></a>
+            <div class=" price__img-bck">
+                <h5 class="card-title title__block-6">Отзывы</h5>
+                <img src="/assets/images/Ellipse_price.png" class="price__ellips-bck d-none d-md-block" alt="circle">
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <img src="assets/images/b5_reviews_img2.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Петр Петров</h5>
-                <p>Отзыв.</p>
-              </div>
+
+            <div id="carouselExampleDark" class="carousel carousel-dark slide d-none d-lg-block reviews__img-bck">
+                <img src="/assets/images/Ellipse_reviews.png" class="reviews__ellips-bck" alt="circle">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <div class="card-wrapper__block-6">
+                            <div class="card card__block-6" style="width: 18rem">
+                                <img src="/assets/images/2-Golyakova.jpg" class="card-img-top img__block-6"
+                                    alt="image" />
+                                <div class="card-body">
+                                    <p class="card-text text__block-6">
+                                        Наталия Голякова, менеджер проектов, г.Ванкувер, Канада <br>
+                                        @nicoll_99 <br />
+                                        Индивидуальная подготовка к IELTS
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card card__block-6" style="width: 18rem">
+                                <img src="/assets/images/3-Koltsova.jpg" class="card-img-top img__block-6"
+                                    alt="image" />
+                                <div class="card-body">
+                                    <p class="card-text text__block-6">
+                                        Мария Кольцова, журналист, г.Тбилиси, Грузия <br>
+                                        @kolt_mi <br>
+                                        Индивидуальная подготовка к IELTS
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card card__block-6" style="width: 18rem">
+                                <img src="/assets/images/4-batekin.jpg" class="card-img-top img__block-6" alt="image" />
+                                <div class="card-body">
+                                    <p class="card-text text__block-6">
+                                        Станислав Батекин, инженер, г.Аделаида, Австралия. <br>
+                                        @sbatekin <br>
+                                        Индивидуальная подготовка к IELTS <br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <div class="card-wrapper__block-6">
+                            <div class="card card__block-6" style="width: 18rem">
+                                <img src="/assets/images/1-1Ivanova.jpg" class="card-img-top img__block-6"
+                                    alt="image" />
+                                <div class="card-body">
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card card__block-6" style="width: 18rem">
+                                <img src="/assets/images/1-2Ivanova.jpg" class="card-img-top img__block-6"
+                                    alt="image" />
+                                <div class="card-body">
+                                    <p class="card-text">
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card card__block-6" style="width: 18rem">
+                                <img src="/assets/images/1-3Ivanova.jpg" class="card-img-top img__block-6"
+                                    alt="image" />
+                                <div class="card-body">
+                                    <p class="card-text text__block-6">
+                                        Ангелина Иванова, журналист, г.Токио, Япония <br>
+                                        @koalified.coach <br>
+                                        Индивидуальная подготовка к IELTS <br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card-wrapper__block-6">
+                            <div class="card card__block-6" style="width: 18rem">
+                                <img src="/assets/images/6-Kulakova.jpg" class="card-img-top img__block-6"
+                                    alt="image" />
+                                <div class="card-body">
+                                    <p class="card-text text__block-6">
+                                        Юлия Кулакова, архитектор, г.Окленд, Новая Зеландия <br>
+                                        @_julia_alikina <br>
+                                        Групповая подготовка к IELTS <br>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card card__block-6" style="width: 18rem">
+                                <img src="/assets/images/7-Trunov.jpg" class="card-img-top img__block-6" alt="image" />
+                                <div class="card-body">
+                                    <p class="card-text text__block-6">
+                                        Георгий Трунов, студент Университета прикладных наук Ханзе (Hanze UAS),
+                                        г.Гронинген, Нидерланды
+                                        <br>
+                                        Консультация по формату IELTS
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card card__block-6" style="width: 18rem">
+                                <img src="/assets/images/10-1Vaginskaya.jpg" class="card-img-top img__block-6"
+                                    alt="image" />
+                                <div class="card-body">
+                                    <p class="card-text text__block-6">
+                                        Валерия Важинская, учитель английского языка <br>
+                                        @leranimess <br>
+                                        Консультация для преподавателей по вопросам подготовки к IELTS
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev d-none d-xl-block" type="button"
+                    data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon d-none d-xl-block m-auto" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next d-none d-xl-block" type="button"
+                    data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon d-none d-xl-block m-auto" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="carousel-item">
-              <img src="assets/images/b5_reviews_img2.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Сергей Сергеев</h5>
-                <p>Отзыв</p>
-              </div>
+
+
+            <div id="carouselExampleIndicatorsSmallScreen" class="carousel slide d-lg-none">
+                <div class="carousel-indicators revies__indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicatorsSmallScreen" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicatorsSmallScreen" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicatorsSmallScreen" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicatorsSmallScreen" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicatorsSmallScreen" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicatorsSmallScreen" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicatorsSmallScreen" data-bs-slide-to="6"
+                        aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicatorsSmallScreen" data-bs-slide-to="7"
+                        aria-label="Slide 8"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicatorsSmallScreen" data-bs-slide-to="8"
+                        aria-label="Slide 9"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card-wrapper__block-6">
+                            <div class="card card__block-6" style="width: 18rem">
+                                <img src="/assets/images/2-Golyakova.jpg" class="card-img-top img__block-6"
+                                    alt="image" />
+                                <div class="card-body">
+                                    <p class="card-text text__block-6">
+                                        Наталия Голякова, менеджер проектов, г.Ванкувер, Канада
+                                        @nicoll_99
+                                        Индивидуальная подготовка к IELTS
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card-wrapper__block-6">
+                            <div class="card card__block-6" style="width: 18rem">
+                                <img src="/assets/images/3-Koltsova.jpg" class="card-img-top img__block-6"
+                                    alt="image" />
+                                <div class="card-body">
+                                    <p class="card-text text__block-6">
+                                        Мария Кольцова, журналист, г.Тбилиси, Грузия
+                                        @kolt_mi
+                                        Индивидуальная подготовка к IELTS
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card-wrapper__block-6">
+                            <div class="card card__block-6" style="width: 18rem">
+                                <img src="/assets/images/4-batekin.jpg" class="card-img-top img__block-6" alt="image" />
+                                <div class="card-body">
+                                    <p class="card-text text__block-6">
+                                        Станислав Батекин, инженер, г.Аделаида, Австралия.
+                                        @sbatekin
+                                        Индивидуальная подготовка к IELTS
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card-wrapper__block-6">
+                            <div class="card card__block-6" style="width: 18rem">
+                                <img src="/assets/images/1-1Ivanova.jpg" class="card-img-top img__block-6"
+                                    alt="image" />
+                                <div class="card-body">
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card-wrapper__block-6">
+                            <div class="card card__block-6" style="width: 18rem">
+                                <img src="/assets/images/1-2Ivanova.jpg" class="card-img-top img__block-6"
+                                    alt="image" />
+                                <div class="card-body">
+                                    <p class="card-text">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card-wrapper__block-6">
+                            <div class="card card__block-6" style="width: 18rem">
+                                <img src="/assets/images/1-3Ivanova.jpg" class="card-img-top img__block-6"
+                                    alt="image" />
+                                <div class="card-body">
+                                    <p class="card-text text__block-6">
+                                        Ангелина Иванова, журналист, г.Токио, Япония
+                                        @koalified.coach
+                                        Индивидуальная подготовка к IELTS
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card-wrapper__block-6">
+                            <div class="card card__block-6" style="width: 18rem">
+                                <img src="/assets/images/6-Kulakova.jpg" class="card-img-top img__block-6"
+                                    alt="image" />
+                                <div class="card-body">
+                                    <p class="card-text text__block-6">
+                                        Юлия Кулакова, архитектор, г.Окленд, Новая Зеландия
+                                        @_julia_alikina
+                                        Групповая подготовка к IELTS
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card-wrapper__block-6">
+                            <div class="card card__block-6" style="width: 18rem">
+                                <img src="/assets/images/7-Trunov.jpg" class="card-img-top img__block-6" alt="image" />
+                                <div class="card-body">
+                                    <p class="card-text text__block-6">
+                                        Георгий Трунов, студент Университета прикладных наук Ханзе (Hanze UAS),
+                                        г.Гронинген, Нидерланды
+                                        Консультация по формату IELTS
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card-wrapper__block-6">
+                            <div class="card card__block-6" style="width: 18rem">
+                                <img src="/assets/images/10-1Vaginskaya.jpg" class="card-img-top img__block-6"
+                                    alt="image" />
+                                <div class="card-body">
+                                    <p class="card-text text__block-6">
+                                        Валерия Важинская, учитель английского языка
+                                        @leranimess
+                                        Консультация для преподавателей по вопросам подготовки к IELTS
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev d-none d-sm-block d-lg-none" type="button"
+                    data-bs-target="#carouselExampleIndicatorsSmallScreen" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon d-none d-sm-block d-lg-none m-auto"
+                        aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next d-none d-sm-block d-lg-none" type="button"
+                    data-bs-target="#carouselExampleIndicatorsSmallScreen" data-bs-slide="next">
+                    <span class="carousel-control-next-icon d-none d-sm-block d-lg-none m-auto"
+                        aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
-      </div>
     </section>
+
+
+
+
+    <div class="d-none d-sm-block back">
+        <a href="#header-anchor">
+            <img src="/assets/icons/arrow.png" title="back-home" alt="arrow-up">
+        </a>
+    </div>
+
 
     <footer class="footer">
+        <div class="container mb-0">
+            <img class="d-none d-md-block img-envelope" src="/assets/icons/Envelope_no_background.png"
+                alt="img-envelope">
+            <img class="d-none d-sm-block d-md-none img-envelope-small" src="/assets/icons/Envelope_no_background.png"
+                alt="img-envelope">
+            <div class="row justify-content-end pb-2">
+                <div class="col footer__text-autor">
+                    Мария Кукиева <span>&copy;</span> 2023
+                </div>
+                <div class="col-10 footer__icon">
+                    <a href="https://instagram.com/ielts_kukieva?igshid=MzRlODBiNWFlZA==">
+                        <img src="/assets/icons/icon_instagram.svg" alt="instagram">
+                    </a>
 
-      <nav class="navbar navbar-dark justify-content-center align-items-end">
-        <img src="assets/images/footer_img.PNG" class="d-block w-25" alt="...">
-        <p class="footer_text">Telegram</p>
-        <p class="footer_text">Instagram</p>
-      </nav>
+                </div>
+                <div class="col footer__icon">
+                    <a href="https://t.me/ielts_kukieva">
+                        <img src="/assets/icons/icon_telegram.svg" alt="telegram">
+                    </a>
 
+                </div>
+            </div>
+        </div>
     </footer>
 
-
-  </main>
-
+    </main>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
