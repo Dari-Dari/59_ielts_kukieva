@@ -360,7 +360,7 @@ footer .img-envelope-small {
 
 .main__section {
   background-color: #e5f3ff;
-  background-image: url("./assets/images/main-banner.png");
+  background-image: url("../assets/images/main-banner.png");
   background-size: cover;
   background-position: center center;
   z-index: 100;
@@ -369,7 +369,7 @@ footer .img-envelope-small {
 }
 @media screen and (max-width: 768px) {
   .main__section {
-    background-image: url("./assets/images/Group47.png");
+    background-image: url("../assets/images/Group47.png");
     background-color: #e5f3ff;
     background-size: cover;
     background-position: center center;
