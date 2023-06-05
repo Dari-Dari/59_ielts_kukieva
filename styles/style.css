@@ -541,6 +541,11 @@ footer .img-envelope-small {
     font-size: 2rem;
   }
 }
+@media screen and (max-width: 578px) {
+  .main__block-3 .services__tittle-top {
+    margin-bottom: 2rem;
+  }
+}
 
 @media screen and (min-width: 576px) {
   .services__modal-dialog {
@@ -564,6 +569,11 @@ footer .img-envelope-small {
   font-size: 4rem;
   line-height: 4.7rem;
   margin: 0 0 4rem 0;
+}
+@media screen and (max-width: 578px) {
+  .block-4 .title-block-4 {
+    margin-bottom: 2rem;
+  }
 }
 .block-4 .block-4__image-block {
   position: relative;
@@ -725,6 +735,11 @@ footer .img-envelope-small {
   font-size: 4rem;
   line-height: 4.7rem;
   margin: 0 0 4rem 0;
+}
+@media screen and (max-width: 578px) {
+  .block-5__title {
+    margin-bottom: 2rem;
+  }
 }
 
 .block-5_card-body {
@@ -937,15 +952,15 @@ footer .img-envelope-small {
   margin: 0.5rem auto;
 }
 
-@media screen and (max-width: 399px) {
-  .services__tittle-top,
-  .title-block-4,
-  .block-5__title,
-  .title__block-6 {
-    margin-bottom: 2rem;
-  }
-}
+/*.services__tittle-top,
+.title-block-4,
+.block-5__title,
+.title__block-6 {
 
+    @media screen and (max-width:578px) {
+        margin-bottom: 2rem;
+    }
+}*/
 @media screen and (max-width: 399px) {
   .main__container,
   .services__container,

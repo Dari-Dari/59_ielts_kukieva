@@ -587,8 +587,11 @@ $font-size: 24px;
         color: $color-gray;
 
         @media screen and (max-width:992px) {
-
             font-size: 2rem;
+        }
+
+        @media screen and (max-width:578px) {
+            margin-bottom: 2rem;
         }
     }
 }
@@ -616,6 +619,10 @@ $font-size: 24px;
         font-size: 4rem;
         line-height: 4.7rem;
         margin: 0 0 4rem 0;
+
+        @media screen and (max-width: 578px) {
+            margin-bottom: 2rem;
+        }
     }
 
     .block-4__image-block {
@@ -798,6 +805,10 @@ $font-size: 24px;
     font-size: 4rem;
     line-height: 4.7rem;
     margin: 0 0 4rem 0;
+
+    @media screen and (max-width: 578px) {
+margin-bottom: 2rem;
+    }
 }
 
 .block-5_card-body {
@@ -1024,15 +1035,15 @@ $font-size: 24px;
 }
 
 
-.services__tittle-top,
+/*.services__tittle-top,
 .title-block-4,
 .block-5__title,
 .title__block-6 {
 
-    @media screen and (max-width:399px) {
+    @media screen and (max-width:578px) {
         margin-bottom: 2rem;
     }
-}
+}*/
 
 .main__container,
 .services__container,
