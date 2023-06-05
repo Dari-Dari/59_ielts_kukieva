@@ -235,79 +235,6 @@ $font-size: 24px;
     }
 }
 
-.card-img-right-small {
-    display: block;
-    margin: 0 auto;
-}
-
-.card-img-right {
-    position: relative;
-    right: 300px;
-    z-index: 1;
-    width: 700px;
-
-    @media (max-width:575px) {
-        position: relative;
-        z-index: 1;
-        width: 38rem;
-        min-width: 38rem;
-        bottom: 14px;
-        right: 27rem;
-    }
-
-    @media (min-width:576px) and (max-width: 768px) {
-        position: relative;
-        z-index: 1;
-        width: 35rem;
-        bottom: 3rem;
-        right: 15rem;
-    }
-
-    @media (min-width:769px) and (max-width:1199px) {
-        position: relative;
-        z-index: 1;
-        width: 40rem;
-        bottom: 3rem;
-        right: 20rem;
-    }
-}
-
-
-.Ellipse {
-    position: relative;
-    bottom: 900px;
-    right: 500px;
-
-    @media (max-width:575px) {
-        display: none;
-    }
-
-    @media (min-width:576px) and (max-width: 768px) {
-        display: none;
-    }
-
-    @media (min-width:769px) and (max-width:1199px) {
-        display: none;
-    }
-}
-
-.Ellipsetwo {
-    position: relative;
-    bottom: 800px;
-    right: 800px;
-
-    @media (max-width:575px) {
-        display: none;
-    }
-
-    @media (min-width:576px) and (max-width: 768px) {
-        display: none;
-    }
-
-    @media (min-width:769px) and (max-width:1199px) {
-        display: none;
-    }
-}
 
 .main__container {
     padding: 3rem 0;
@@ -453,7 +380,6 @@ $font-size: 24px;
 .main__text .main__card-body {
 
     @media screen and (min-width: 1151px) and (max-width: 2550px) {
-
         padding: 13rem 0 8rem;
     }
 
@@ -494,22 +420,10 @@ $font-size: 24px;
     }
 }
 
-
-
-
-/*.main__foto {
-    background-image: url(/assets/images/main-banner.png);
-    background-size: cover;
-    z-index: 100;
-}*/
-
-
-
 /*main-banner*/
 
 /*block-3 services*/
 .main__block-3 {
-
     .services__ellipse {
         position: relative;
 
@@ -518,11 +432,6 @@ $font-size: 24px;
             top: -5rem;
             right: -2.5rem;
             z-index: -1;
-
-            /*  @media screen and (min-width:992px) and (max-width:1199px) {
-                top: -5rem;
-                right: 0;
-            }*/
         }
     }
 
@@ -565,12 +474,10 @@ $font-size: 24px;
         opacity: 0.85;
         color: $color-red;
         font-weight: 500;
-
     }
 
     .modal-content__services {
         background-color: beige;
-
     }
 
     .services__modal-header {
@@ -807,7 +714,7 @@ $font-size: 24px;
     margin: 0 0 4rem 0;
 
     @media screen and (max-width: 578px) {
-margin-bottom: 2rem;
+        margin-bottom: 2rem;
     }
 }
 
