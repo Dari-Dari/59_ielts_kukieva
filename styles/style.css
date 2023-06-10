@@ -369,8 +369,8 @@ footer .img-envelope-small {
 }
 @media screen and (max-width: 768px) {
   .main__section {
-    background-image: url("../assets/images/Group47.png");
     background-color: #e5f3ff;
+    background-image: url("../assets/images/Group47.png");
     background-size: cover;
     background-position: center center;
     z-index: 100;
